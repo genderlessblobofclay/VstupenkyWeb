@@ -1,0 +1,21 @@
+@page
+@model VstupenkyWeb.Pages.Vstupenky.PridatModel
+@{
+    ViewData["Title"] = "Přidat vstupenku";
+}
+
+<h1>Přidat novou vstupenku</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label for="NoveJmeno">Jméno:</label>
+        <input type="text" class="form-control" asp-for="NoveJmeno" required>
+    </div>
+    <div class="form-group">
+        <label for="NovyPocet">Počet:</label>
+        <input type="number" class="form-control" asp-for="NovyPocet" required>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Přidat</button>
+    <a asp-page="./TabulkaVstupenky" class="btn btn-secondary">Zpět na seznam</a>
+</form>

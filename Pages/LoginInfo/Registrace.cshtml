@@ -1,0 +1,56 @@
+@page
+@model VstupenkyWeb.Pages.LoginInfo.RegistraceModel
+@using VstupenkyWeb.Models 
+
+@{
+    ViewData["Title"] = "Registrace";
+}
+
+<h1>Registrace nového účtu</h1>
+
+<form method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group">
+        <label for="login">Login:</label>
+        <input type="text" class="form-control" asp-for="NovyUzivatel.login" required>
+        <span asp-validation-for="NovyUzivatel.login" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="heslo">Heslo:</label>
+        <input type="password" class="form-control" asp-for="NovyUzivatel.heslo" required>
+        <span asp-validation-for="NovyUzivatel.heslo" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" asp-for="NovyUzivatel.email" required>
+        <span asp-validation-for="NovyUzivatel.email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="jmeno">Jméno:</label>
+        <input type="text" class="form-control" asp-for="NovyUzivatel.jmeno" required>
+        <span asp-validation-for="NovyUzivatel.jmeno" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="prijmeni">Příjmení:</label>
+        <input type="text" class="form-control" asp-for="NovyUzivatel.prijmeni" required>
+        <span asp-validation-for="NovyUzivatel.prijmeni" class="text-danger"></span>
+    </div>
+
+    @if (User.IsInRole("Admin"))
+    {
+    <div class="form-group">
+        <label for="prava">Role:</label>
+        <select class="form-control" asp-for="NovyUzivatel.prava">
+            <option value="@((int)VstupenkyWeb.Models.Role.Zakaznik)">Zákazník</option>
+            <option value="@((int)VstupenkyWeb.Models.Role.Admin)">Admin</option>
+        </select>
+        <span asp-validation-for="NovyUzivatel.prava" class="text-danger"></span>
+    </div>
+    }
+    <button type="submit" class="btn btn-primary">Registrovat</button>
+    <a asp-page="./Prihlaseni" class="btn btn-secondary">Zpět na přihlášení</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

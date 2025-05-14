@@ -1,0 +1,41 @@
+@page
+@model VstupenkyWeb.Pages.IndexModel;
+@{
+    ViewData["Title"] = "Přihlášení";
+}
+
+<h1>Přihlášení</h1>
+
+@if (ViewBag.PrihlaseniUspesne != null)
+{
+    <div class="alert alert-success">
+        @ViewBag.PrihlaseniUspesne
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class="alert alert-danger">@Model.ErrorMessage</div>
+}
+
+<form method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group">
+        <label for="login">Login:</label>
+        <input type="text" class="form-control" asp-for="login" required>
+        <span asp-validation-for="login" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="heslo">Heslo:</label>
+        <input type="password" class="form-control" asp-for="heslo" required>
+        <span asp-validation-for="heslo" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Přihlásit</button>
+    <a asp-page="LoginInfo/Registrace" class="btn btn-primary">Vytvořit nový účet</a>
+    <br />
+    
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

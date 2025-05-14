@@ -1,0 +1,50 @@
+@page
+@model VstupenkyWeb.Pages.Vstupenky.TabulkaVstupenkyModel
+@using System.Security.Claims
+
+@{
+    ViewData["Title"] = "Vstupenky";
+    var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
+}
+
+<h1>Seznam Vstupenek</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Jméno</th>
+            <th>Počet</th>
+            @if (User.IsInRole("Admin") || User.IsInRole("Zakaznik"))
+            {
+                <th>Akce</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var vstupenka in Model.Vstupenky)
+        {
+            <tr>
+                <td>@vstupenka.Id</td>
+                <td>@vstupenka.Jmeno</td>
+                <td>@vstupenka.Pocet</td>
+                <td>
+                    @if (User.IsInRole("Admin") || vstupenka.Uzivatel_ID == userId)
+                    {
+                        <form method="post">
+                            <input type="hidden" asp-for="@vstupenka.Id" name="id" />
+                            <button type="submit" class="btn btn-danger btn-sm">Odstranit</button>
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p>
+    @if (User.IsInRole("Zakaznik"))
+    {
+     <a asp-page="./Pridat" class="btn btn-primary">Rezervovat vstupenky</a>
+    }
+</p>
