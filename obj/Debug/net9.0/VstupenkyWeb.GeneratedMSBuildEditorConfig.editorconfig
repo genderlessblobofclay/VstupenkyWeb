@@ -28,8 +28,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/brigadnik1/Desktop/Praxe/ConsoleApp1/ConsoleApp1/VstupenkyWeb/Pages/LoginInfo/ObnovaHesla.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5JbmZvXE9ibm92YUhlc2xhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/brigadnik1/Desktop/Praxe/ConsoleApp1/ConsoleApp1/VstupenkyWeb/Pages/LoginInfo/Registrace.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5JbmZvXFJlZ2lzdHJhY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/brigadnik1/Desktop/Praxe/ConsoleApp1/ConsoleApp1/VstupenkyWeb/Pages/LoginInfo/ZapomenuteHeslo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5JbmZvXFphcG9tZW51dGVIZXNsby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/brigadnik1/Desktop/Praxe/ConsoleApp1/ConsoleApp1/VstupenkyWeb/Pages/Odhlasit.cshtml]

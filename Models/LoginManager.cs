@@ -1,3 +1,4 @@
+// filepath: c:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\Models\LoginManager.cs
 using Microsoft.Extensions.Configuration;
 using Microsoft.Data.SqlClient;
 using System;
@@ -5,6 +6,9 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Linq; // Pro použití Take
 using Microsoft.AspNetCore.Identity;
+using SendGrid;
+using SendGrid.Helpers.Mail;
+using System.Threading.Tasks;
 
 namespace VstupenkyWeb.Models
 {
@@ -12,11 +16,33 @@ namespace VstupenkyWeb.Models
     {
         private readonly string _connectionString;
         private readonly IPasswordHasher<IdentityUser> _passwordHasher;
+        private readonly IConfiguration _configuration;
 
         public LoginManager(IConfiguration configuration, IPasswordHasher<IdentityUser> passwordHasher)
         {
             _connectionString = configuration.GetConnectionString("VstupenkyDB") ?? "";
             _passwordHasher = passwordHasher;
+            _configuration = configuration;
+        }
+
+        private async Task SendEmail(string to, string subject, string body)
+        {
+            var apiKey = _configuration["SendGrid:ApiKey"]; // Access API key from configuration
+            var client = new SendGridClient(apiKey);
+            var from = new EmailAddress("ppatrik1993@gmail.com", "Akce Ostrava"); // Replace with your email address
+            var toEmail = new EmailAddress(to);
+            var plainTextContent = System.Net.WebUtility.HtmlEncode(body); // Sanitize HTML for plain text
+            var htmlContent = body;
+            var msg = MailHelper.CreateSingleEmail(from, toEmail, subject, plainTextContent, htmlContent);
+            try
+            {
+                var response = await client.SendEmailAsync(msg);
+                Console.WriteLine($"Email sent to {to}. Status code: {response.StatusCode}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error sending email: {ex}");
+            }
         }
 
         private static string TabulkaUsers = "[devextlunch].[devextlunch].[Uzivatel]"; // Název vaší tabulky s uživateli
@@ -61,10 +87,9 @@ namespace VstupenkyWeb.Models
                     }
                 }
             }
-            catch (Exception ex)
+            catch (SqlException ex)
             {
-                Console.WriteLine($"Chyba při registraci uživatele s loginem '{login}': {ex.Message}");
-                // Zvažte logování chyby ve webovém prostředí
+                Console.WriteLine($"Chyba při registraci uživatele: {ex.Message}");
             }
         }
 
@@ -103,6 +128,40 @@ namespace VstupenkyWeb.Models
             return result == PasswordVerificationResult.Success;
         }
 
-        // Můžete přidat další metody pro správu uživatelů, např. ověření, načtení atd.
+        
+        
+        public string GeneratePasswordResetToken(string email)
+        {
+            // Generate a unique token
+            return Guid.NewGuid().ToString();
+        }
+
+        public async Task SendPasswordResetEmail(string email, string resetToken)
+        {
+            // Create the password reset link
+            string resetLink = $"https://yourwebsite.com/LoginInfo/ResetPassword?email={email}&token={resetToken}";
+
+            // Create the email message
+            string subject = "Žádost o resetování hesla";
+            string body = $"Pro resetování hesla klikněte na následující odkaz: <a href=\"{resetLink}\">Resetovat heslo</a>";
+
+            // Send the email (you'll need to implement your email sending logic here)
+            await SendEmail(email, subject, body);
+        }
+        public bool VerifyPasswordResetToken(string email, string token)
+        {
+            // Verify that the token is valid for the given email
+            // This is just a placeholder
+            return true;
+        }
+
+        public void ResetPassword(string email, string newPassword)
+        {
+            // Reset the user's password in the database
+            // This is just a placeholder
+            Console.WriteLine($"Resetting password for email: {email}, new password: {newPassword}");
+        }
     }
+
+    
 }

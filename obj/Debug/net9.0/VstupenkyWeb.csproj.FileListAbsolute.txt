@@ -151,3 +151,13 @@ C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug
 C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\VstupenkyWeb.pdb
 C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\VstupenkyWeb.genruntimeconfig.cache
 C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\ref\VstupenkyWeb.dll
+C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\bin\Debug\net9.0\publish\web.config
+C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\bin\Debug\net9.0\publish\appsettings.Development.json
+C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\bin\Debug\net9.0\publish\appsettings.json
+C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\bin\Debug\net9.0\publish\VstupenkyWeb.deps.json
+C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\bin\Debug\net9.0\publish\VstupenkyWeb.runtimeconfig.json
+C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\bin\Debug\net9.0\publish\VstupenkyWeb.staticwebassets.endpoints.json
+C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\VstupenkyWeb.sourcelink.json
+C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\bin\Debug\net9.0\SendGrid.dll
+C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\bin\Debug\net9.0\StarkbankEcdsa.dll

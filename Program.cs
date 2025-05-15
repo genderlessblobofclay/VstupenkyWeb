@@ -1,21 +1,25 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 
-// **SPRÁVNÉ UMÍSTĚNÍ REGISTRACE SLUŽBY**
+// **CORRECT LOCATION FOR SERVICE REGISTRATION**
+Console.WriteLine($"Connection string: {builder.Configuration.GetConnectionString("VstupenkyDB")}");
+Console.WriteLine($"SendGrid API Key: {builder.Configuration["SendGrid:ApiKey"]}");
 builder.Services.AddTransient<VstupenkyWeb.Models.VstupenkyManager>();
-builder.Services.AddTransient<VstupenkyWeb.Models.LoginManager>();
+builder.Services.AddTransient<VstupenkyWeb.Models.LoginManager>(provider =>
+{
+    var configuration = provider.GetRequiredService<IConfiguration>();
+    var passwordHasher = provider.GetRequiredService<IPasswordHasher<IdentityUser>>();
+    return new VstupenkyWeb.Models.LoginManager(configuration, passwordHasher);
+});
+builder.Services.AddScoped<IPasswordHasher<IdentityUser>, PasswordHasher<IdentityUser>>();
 
 builder.Services.AddHttpContextAccessor();
 
-
-
-builder.Services.AddScoped<IPasswordHasher<IdentityUser>, PasswordHasher<IdentityUser>>();
-
-builder.Services.AddRazorPages();
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
@@ -41,12 +45,8 @@ app.UseAuthorization();
 app.MapRazorPages();
 //app.UseHttpsRedirection();
 
-
 app.MapStaticAssets();
 app.MapRazorPages()
     .WithStaticAssets();
 
 app.Run();
-
-// **TOTO JE ŠPATNĚ - PO app.Build() UŽ NEMŮŽEŠ PŘIDÁVAT SLUŽBY**
-// builder.Services.AddTransient<VstupenkyWeb.Models.VstupenkyManager>();

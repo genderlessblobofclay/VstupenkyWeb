@@ -11,7 +11,6 @@ public class RezervaceModel : PageModel
     {
         _logger = logger;
     }
-
     public void OnGet()
     {
 

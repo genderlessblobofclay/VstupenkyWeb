@@ -1,0 +1,24 @@
+@page
+@model VstupenkyWeb.Pages.LoginInfo.ZapomenuteHesloModel
+@{
+    ViewData["Title"] = "Zapomenuté heslo";
+}
+
+<h1>Zapomenuté heslo</h1>
+
+<p>Zadejte svůj email pro zaslání žádosti o resetování hesla.</p>
+
+<form method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" asp-for="Email" required>
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Odeslat žádost</button>
+    <a asp-page="/Index" class="btn btn-secondary">Zpět na přihlášení</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

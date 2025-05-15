@@ -5,9 +5,12 @@ using Microsoft.AspNetCore.Identity;
 using System;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Authorization;
 
 namespace VstupenkyWeb.Pages.LoginInfo
 {
+
+    [AllowAnonymous]
     public class RegistraceModel : PageModel
     {
         private readonly LoginManager _loginManager;
@@ -48,13 +51,13 @@ namespace VstupenkyWeb.Pages.LoginInfo
                     return Page();
                 }
                 if (User.IsInRole("Admin"))
-                    {
+                {
 
-                    }
+                }
                 else
-                    {
-                        NovyUzivatel.prava = VstupenkyWeb.Models.Role.Navstevnik;
-                    }
+                {
+                    NovyUzivatel.prava = VstupenkyWeb.Models.Role.Navstevnik;
+                }
                 // Use the LoginManager to add the user
                 _loginManager.PridatUzivatele(
                     NovyUzivatel.jmeno,
@@ -95,6 +98,6 @@ namespace VstupenkyWeb.Pages.LoginInfo
 
         [Required(ErrorMessage = "Příjmení je povinné.")]
         public string prijmeni { get; set; }
-       public VstupenkyWeb.Models.Role prava { get; set; }
+        public VstupenkyWeb.Models.Role prava { get; set; }
     }
 }
