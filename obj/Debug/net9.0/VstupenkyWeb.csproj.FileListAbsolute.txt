@@ -72,7 +72,6 @@ C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\bin\Debug
 C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\scopedcss\bundle\VstupenkyWeb.styles.css
 C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\scopedcss\projectbundle\VstupenkyWeb.bundle.scp.css
-C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\7insjaiag6-b9sayid5wm.gz
 C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\gd2rxl9zas-61n19gt1b8.gz
 C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\vuzvxzc0yr-xtxxf3hu2r.gz
 C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\cqz6ryo7ed-bqjiyaj88i.gz
@@ -161,3 +160,4 @@ C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug
 C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\bin\Debug\net9.0\Newtonsoft.Json.dll
 C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\bin\Debug\net9.0\SendGrid.dll
 C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\bin\Debug\net9.0\StarkbankEcdsa.dll
+C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\7insjaiag6-dts128j107.gz

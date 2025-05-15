@@ -3,9 +3,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
 using VstupenkyWeb.Models; // Assuming your models are in this namespace
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace VstupenkyWeb.Pages.LoginInfo
 {
+    [AllowAnonymous]
     public class ZapomenuteHesloModel : PageModel
     {
         private readonly LoginManager _loginManager; // Inject your LoginManager

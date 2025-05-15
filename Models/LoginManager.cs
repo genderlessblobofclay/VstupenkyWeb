@@ -29,7 +29,7 @@ namespace VstupenkyWeb.Models
         {
             var apiKey = _configuration["SendGrid:ApiKey"]; // Access API key from configuration
             var client = new SendGridClient(apiKey);
-            var from = new EmailAddress("****", "Akce Ostrava"); // Replace with your email address
+            var from = new EmailAddress("ppatrik1993@gmail.com", "Akce Ostrava"); // Replace with your email address
             var toEmail = new EmailAddress(to);
             var plainTextContent = System.Net.WebUtility.HtmlEncode(body); // Sanitize HTML for plain text
             var htmlContent = body;
@@ -42,7 +42,7 @@ namespace VstupenkyWeb.Models
             catch (Exception ex)
             {
                 Console.WriteLine($"Error sending email: {ex}");
-            }
+             }
         }
 
         private static string TabulkaUsers = "[devextlunch].[devextlunch].[Uzivatel]"; // Název vaší tabulky s uživateli
@@ -128,8 +128,8 @@ namespace VstupenkyWeb.Models
             return result == PasswordVerificationResult.Success;
         }
 
-        
-        
+
+
         public string GeneratePasswordResetToken(string email)
         {
             // Generate a unique token
@@ -160,6 +160,30 @@ namespace VstupenkyWeb.Models
             // Reset the user's password in the database
             // This is just a placeholder
             Console.WriteLine($"Resetting password for email: {email}, new password: {newPassword}");
+        }
+        
+        public void UpdateUserRole(int userId, int roleId)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(_connectionString))
+                {
+                    connection.Open();
+                    string sql = "UPDATE [devextlunch].[Uzivatel] SET prava = @roleId WHERE Uzivatel_ID = @userId";
+                    using (SqlCommand command = new SqlCommand(sql, connection))
+                    {
+                        command.Parameters.AddWithValue("@roleId", roleId);
+                        command.Parameters.AddWithValue("@userId", userId);
+                        command.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the error
+                Console.WriteLine($"Error updating user role: {ex}");
+                throw; // Re-throw the exception to indicate failure
+            }
         }
     }
 

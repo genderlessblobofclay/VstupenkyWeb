@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Authorization;
 namespace VstupenkyWeb.Pages.Vstupenky
 {
-    
+   
     public class TabulkaVstupenkyModel : PageModel
     {
         private readonly VstupenkyManager _vstupenkyManager;

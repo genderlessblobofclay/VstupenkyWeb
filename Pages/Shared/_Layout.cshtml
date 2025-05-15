@@ -23,17 +23,27 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Vstupenky/TabulkaVstupenky">Seznam Vstupenek</a>
                         </li>
-                        <li>
-                        <a class="nav-link text-dark" asp-area="" asp-page="/Index">Přihlášení</a>
-                        </li>
-                        @if (User.IsInRole("Admin") || User.IsInRole("Zakaznik"))
+                    </ul>    
+                    <ul class="navbar-nav">
+                        @if (!User.Identity.IsAuthenticated)
                         {
-                            <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/SignOut">Odhlásit se</a>
+                            <li>
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Index">Přihlášení</a>
                             </li>
                         }
-
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <span class="navbar-text text-dark navbar-text-aligned">
+                                    Přihlášen jako: @User.Identity.Name
+                                </span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Odhlaseni">Odhlásit se</a>
+                            </li>
+                        }
                     </ul>
+                    
                 </div>
             </div>
         </nav>
