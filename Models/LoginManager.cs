@@ -29,7 +29,7 @@ namespace VstupenkyWeb.Models
         {
             var apiKey = _configuration["SendGrid:ApiKey"]; // Access API key from configuration
             var client = new SendGridClient(apiKey);
-            var from = new EmailAddress("ppatrik1993@gmail.com", "Akce Ostrava"); // Replace with your email address
+            var from = new EmailAddress("****", "Akce Ostrava"); // Replace with your email address
             var toEmail = new EmailAddress(to);
             var plainTextContent = System.Net.WebUtility.HtmlEncode(body); // Sanitize HTML for plain text
             var htmlContent = body;
