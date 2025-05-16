@@ -48,39 +48,39 @@ namespace VstupenkyWeb.Models
         private static string TabulkaUsers = "[devextlunch].[devextlunch].[Uzivatel]"; // Název vaší tabulky s uživateli
 
         public void PridatUzivatele(string jmeno, string prijmeni, int prava, string login, string heslo, string email, string profileIconPath)
-{
-    try
-    {
-        using (SqlConnection connection = new SqlConnection(_connectionString))
         {
-            connection.Open();
-            string sql = "INSERT INTO [devextlunch].[Uzivatel] (jmeno, prijmeni, prava, login, heslo, email, ikona) VALUES (@jmeno, @prijmeni, @prava, @login, @heslo, @email, @ikona)";
-            using (SqlCommand command = new SqlCommand(sql, connection))
+            try
             {
-                command.Parameters.AddWithValue("@jmeno", jmeno);
-                command.Parameters.AddWithValue("@prijmeni", prijmeni);
-                command.Parameters.AddWithValue("@prava", prava);
-                command.Parameters.AddWithValue("@login", login);
+                using (SqlConnection connection = new SqlConnection(_connectionString))
+                {
+                    connection.Open();
+                    string sql = "INSERT INTO [devextlunch].[Uzivatel] (jmeno, prijmeni, prava, login, heslo, email, ikona) VALUES (@jmeno, @prijmeni, @prava, @login, @heslo, @email, @ikona)";
+                    using (SqlCommand command = new SqlCommand(sql, connection))
+                    {
+                        command.Parameters.AddWithValue("@jmeno", jmeno);
+                        command.Parameters.AddWithValue("@prijmeni", prijmeni);
+                        command.Parameters.AddWithValue("@prava", prava);
+                        command.Parameters.AddWithValue("@login", login);
 
-                // Hash the password here
-                var passwordHasher = new PasswordHasher<object>();
-                string hashedPassword = passwordHasher.HashPassword(null, heslo);
+                        // Hash the password here
+                        var passwordHasher = new PasswordHasher<object>();
+                        string hashedPassword = passwordHasher.HashPassword(null, heslo);
 
-                command.Parameters.AddWithValue("@heslo", hashedPassword);
-                command.Parameters.AddWithValue("@email", email);
-                command.Parameters.AddWithValue("@ikona", profileIconPath ?? (object)DBNull.Value);
+                        command.Parameters.AddWithValue("@heslo", hashedPassword);
+                        command.Parameters.AddWithValue("@email", email);
+                        command.Parameters.AddWithValue("@ikona", profileIconPath ?? (object)DBNull.Value);
 
-                command.ExecuteNonQuery();
+                        command.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the error
+                Console.WriteLine($"Error adding user: {ex}");
+                throw; // Re-throw the exception to indicate failure
             }
         }
-    }
-    catch (Exception ex)
-    {
-        // Log the error
-        Console.WriteLine($"Error adding user: {ex}");
-        throw; // Re-throw the exception to indicate failure
-    }
-}
 
         public bool LoginExists(string login)
         {
@@ -260,48 +260,50 @@ namespace VstupenkyWeb.Models
                 throw; // Re-throw the exception to indicate failure
             }
         }
-        
-        public User GetUserById(int userId)
-{
-    try
-    {
-        using (SqlConnection connection = new SqlConnection(_connectionString))
-        {
-            connection.Open();
-            string sql = "SELECT Uzivatel_ID, jmeno, prijmeni, email, login, heslo, prava FROM [devextlunch].[Uzivatel] WHERE Uzivatel_ID = @ID";
-            using (SqlCommand command = new SqlCommand(sql, connection))
-            {
-                command.Parameters.AddWithValue("@ID", userId);
 
-                using (SqlDataReader reader = command.ExecuteReader())
+        public User GetUserById(int userId)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(_connectionString))
                 {
-                    if (reader.Read())
+                    connection.Open();
+                    string sql = "SELECT Uzivatel_ID, jmeno, prijmeni, email, login, heslo, prava FROM [devextlunch].[Uzivatel] WHERE Uzivatel_ID = @ID";
+                    using (SqlCommand command = new SqlCommand(sql, connection))
                     {
-                        return new User
+                        command.Parameters.AddWithValue("@ID", userId);
+
+                        using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            Uzivatele_ID = (int)reader["Uzivatel_ID"],
-                            jmeno = reader["jmeno"].ToString(),
-                            prijmeni = reader["prijmeni"].ToString(),
-                            email = reader["email"].ToString(),
-                            login = reader["login"].ToString(),
-                            heslo = reader["heslo"].ToString(), // Retrieve the hashed password
-                            prava = (Role)(int)reader["prava"]
-                        };
-                    }
-                    else
-                    {
-                        return null;
+                            if (reader.Read())
+                            {
+                                return new User
+                                {
+                                    Uzivatele_ID = (int)reader["Uzivatel_ID"],
+                                    jmeno = reader["jmeno"].ToString(),
+                                    prijmeni = reader["prijmeni"].ToString(),
+                                    email = reader["email"].ToString(),
+                                    login = reader["login"].ToString(),
+                                    heslo = reader["heslo"].ToString(), // Retrieve the hashed password
+                                    prava = (Role)(int)reader["prava"]
+                                };
+                            }
+                            else
+                            {
+                                return null;
+                            }
+                        }
                     }
                 }
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error getting user by ID: {ex}");
+                return null;
+            }
         }
-    }
-    catch (Exception ex)
-    {
-        Console.WriteLine($"Error getting user by ID: {ex}");
-        return null;
-    }
-}
+        
+        
     }
 
     

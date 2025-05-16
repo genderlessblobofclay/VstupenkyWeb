@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MX7VBB/mFsIh+BOQNgoB+qYhd7VN3lWhu+AFxu8dYAY=",
+  "Hash": "8KivuQI1SaMyS9hLZu+O/hqw4oQfA/mt4zfLUmfl7tI=",
   "Source": "VstupenkyWeb",
   "BasePath": "_content/VstupenkyWeb",
   "Mode": "Default",
@@ -3388,7 +3388,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:19:44 GMT"
+          "Value": "Fri, 16 May 2025 11:34:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3433,7 +3433,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:19:44 GMT"
+          "Value": "Fri, 16 May 2025 11:34:33 GMT"
         },
         {
           "Name": "Cache-Control",
