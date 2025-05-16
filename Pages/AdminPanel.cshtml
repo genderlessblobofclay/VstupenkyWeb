@@ -1,0 +1,45 @@
+@page
+@model VstupenkyWeb.Pages.AdminPanelModel
+@using VstupenkyWeb.Models
+@{
+    ViewData["Title"] = "Admin Panel";
+}
+
+<h1>Admin Panel</h1>
+
+@if (Model.ErrorMessage != null)
+{
+    <div class="alert alert-danger">@Model.ErrorMessage</div>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Login</th>
+            <th>Jméno</th>
+            <th>Příjmení</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Akce</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model.Users)
+        {
+            <tr>
+                <td>@user.Uzivatele_ID</td>
+                <td>@user.login</td>
+                <td>@user.jmeno</td>
+                <td>@user.prijmeni</td>
+                <td>@user.email</td>
+                <td>@user.prava</td>
+                <td>
+                    <form method="post" asp-page-handler="Delete" asp-route-id="@user.Uzivatele_ID">
+                        <button type="submit" class="btn btn-danger">Smazat Účet</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

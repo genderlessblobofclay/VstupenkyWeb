@@ -6,18 +6,22 @@ using System;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using System.IO;
+using Microsoft.AspNetCore.Hosting;
 
 namespace VstupenkyWeb.Pages.LoginInfo
 {
-
     [AllowAnonymous]
     public class RegistraceModel : PageModel
     {
         private readonly LoginManager _loginManager;
+        private readonly IWebHostEnvironment _environment;
 
-        public RegistraceModel(LoginManager loginManager)
+        public RegistraceModel(LoginManager loginManager, IWebHostEnvironment environment)
         {
             _loginManager = loginManager;
+            _environment = environment;
         }
 
         [BindProperty]
@@ -50,6 +54,23 @@ namespace VstupenkyWeb.Pages.LoginInfo
                     ModelState.AddModelError("NovyUzivatel.email", "Uživatel s tímto emailem již existuje.");
                     return Page();
                 }
+
+                // Handle profile icon upload
+                string profileIconPath = null;
+                if (NovyUzivatel.profileIcon != null)
+                {
+                    // Save the profile icon to the server
+                    var fileName = Path.GetFileName(NovyUzivatel.profileIcon.FileName);
+                    var filePath = Path.Combine(_environment.WebRootPath, "images", fileName);
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await NovyUzivatel.profileIcon.CopyToAsync(fileStream);
+                    }
+
+                    // Save the file path
+                    profileIconPath = "/images/" + fileName;
+                }
+
                 if (User.IsInRole("Admin"))
                 {
 
@@ -58,6 +79,7 @@ namespace VstupenkyWeb.Pages.LoginInfo
                 {
                     NovyUzivatel.prava = VstupenkyWeb.Models.Role.Navstevnik;
                 }
+
                 // Use the LoginManager to add the user
                 _loginManager.PridatUzivatele(
                     NovyUzivatel.jmeno,
@@ -65,7 +87,8 @@ namespace VstupenkyWeb.Pages.LoginInfo
                     (int)NovyUzivatel.prava, // Pass the Role enum value as an integer
                     NovyUzivatel.login,
                     NovyUzivatel.heslo, // Pass the plain text password
-                    NovyUzivatel.email
+                    NovyUzivatel.email,
+                    profileIconPath // Pass the profile icon file path
                 );
             }
             catch (Exception ex)
@@ -79,25 +102,27 @@ namespace VstupenkyWeb.Pages.LoginInfo
             return RedirectToPage("/Index"); // Redirect to login page after successful registration
         }
     }
+}
+public class NovyUzivatel
+{
+    [Required(ErrorMessage = "Login je povinný.")]
+    public string login { get; set; }
 
-    public class NovyUzivatel
-    {
-        [Required(ErrorMessage = "Login je povinný.")]
-        public string login { get; set; }
+    [Required(ErrorMessage = "Heslo je povinné.")]
+    [DataType(DataType.Password)]
+    public string heslo { get; set; }
 
-        [Required(ErrorMessage = "Heslo je povinné.")]
-        [DataType(DataType.Password)]
-        public string heslo { get; set; }
+    [Required(ErrorMessage = "Email je povinný.")]
+    [EmailAddress(ErrorMessage = "Neplatný formát emailu.")]
+    public string email { get; set; }
 
-        [Required(ErrorMessage = "Email je povinný.")]
-        [EmailAddress(ErrorMessage = "Neplatný formát emailu.")]
-        public string email { get; set; }
+    [Required(ErrorMessage = "Jméno je povinné.")]
+    public string jmeno { get; set; }
 
-        [Required(ErrorMessage = "Jméno je povinné.")]
-        public string jmeno { get; set; }
+    [Required(ErrorMessage = "Příjmení je povinné.")]
+    public string prijmeni { get; set; }
+    public VstupenkyWeb.Models.Role prava { get; set; }
 
-        [Required(ErrorMessage = "Příjmení je povinné.")]
-        public string prijmeni { get; set; }
-        public VstupenkyWeb.Models.Role prava { get; set; }
-    }
+    [Display(Name = "Profilový obrázek")]
+   public IFormFile profileIcon { get; set; }
 }

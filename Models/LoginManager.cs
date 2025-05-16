@@ -42,12 +42,12 @@ namespace VstupenkyWeb.Models
             catch (Exception ex)
             {
                 Console.WriteLine($"Error sending email: {ex}");
-             }
+            }
         }
 
         private static string TabulkaUsers = "[devextlunch].[devextlunch].[Uzivatel]"; // Název vaší tabulky s uživateli
 
-        public void PridatUzivatele(string jmeno, string prijmeni, int prava, string login, string heslo, string email)
+        public void PridatUzivatele(string jmeno, string prijmeni, int prava, string login, string heslo, string email, string profileIconPath)
         {
             try
             {
@@ -59,13 +59,7 @@ namespace VstupenkyWeb.Models
                     var user = new IdentityUser(); // We only need this to hash the password.  We don't save it.
                     string hashedPassword = _passwordHasher.HashPassword(user, heslo);
 
-                    // Truncate the hashed password to 50 characters
-                    if (hashedPassword.Length > 50)
-                    {
-                        hashedPassword = hashedPassword.Substring(0, 50);
-                    }
-
-                    string sql = $"INSERT INTO {TabulkaUsers} (jmeno, prijmeni, prava, login, heslo, email) VALUES (@jmeno, @prijmeni, @prava, @login, @heslo, @email)";
+                    string sql = $"INSERT INTO {TabulkaUsers} (jmeno, prijmeni, prava, login, heslo, email, ikona) VALUES (@jmeno, @prijmeni, @prava, @login, @heslo, @email, @profileIconPath)";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         command.Parameters.AddWithValue("@jmeno", jmeno);
@@ -74,6 +68,7 @@ namespace VstupenkyWeb.Models
                         command.Parameters.AddWithValue("@login", login);
                         command.Parameters.AddWithValue("@heslo", hashedPassword); // Store the hashed password
                         command.Parameters.AddWithValue("@email", email);
+                        command.Parameters.AddWithValue("@profileIconPath", profileIconPath);
 
                         int rowsAffected = command.ExecuteNonQuery();
                         if (rowsAffected > 0)
@@ -91,6 +86,7 @@ namespace VstupenkyWeb.Models
             {
                 Console.WriteLine($"Chyba při registraci uživatele: {ex.Message}");
             }
+
         }
 
         public bool LoginExists(string login)
@@ -161,7 +157,7 @@ namespace VstupenkyWeb.Models
             // This is just a placeholder
             Console.WriteLine($"Resetting password for email: {email}, new password: {newPassword}");
         }
-        
+
         public void UpdateUserRole(int userId, int roleId)
         {
             try
@@ -169,7 +165,7 @@ namespace VstupenkyWeb.Models
                 using (SqlConnection connection = new SqlConnection(_connectionString))
                 {
                     connection.Open();
-                    string sql = "UPDATE [devextlunch].[Uzivatel] SET prava = @roleId WHERE Uzivatel_ID = @userId";
+                    string sql = "UPDATE [devextlunch].[Uzivatel] SET Prava = @roleId WHERE Uzivatel_ID = @userId";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         command.Parameters.AddWithValue("@roleId", roleId);
@@ -185,6 +181,134 @@ namespace VstupenkyWeb.Models
                 throw; // Re-throw the exception to indicate failure
             }
         }
+
+        public void UpdateUserEmail(int userId, string newEmail)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(_connectionString))
+                {
+                    connection.Open();
+                    string sql = "UPDATE [devextlunch].[Uzivatel] SET email = @newEmail WHERE Uzivatel_ID = @userId";
+                    using (SqlCommand command = new SqlCommand(sql, connection))
+                    {
+                        command.Parameters.AddWithValue("@newEmail", newEmail);
+                        command.Parameters.AddWithValue("@userId", userId);
+                        command.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the error
+                Console.WriteLine($"Error updating user email: {ex}");
+                throw; // Re-throw the exception to indicate failure
+            }
+        }
+
+        public void UpdateUserPassword(int userId, string newPassword, IPasswordHasher<IdentityUser> passwordHasher)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(_connectionString))
+                {
+                    connection.Open();
+
+                    // Hash the new password
+                    var user = new IdentityUser();
+                    string hashedPassword = passwordHasher.HashPassword(user, newPassword);
+
+                    string sql = "UPDATE [devextlunch].[Uzivatel] SET heslo = @Heslo WHERE Uzivatel_ID = @ID";
+                    using (SqlCommand command = new SqlCommand(sql, connection))
+                    {
+                        command.Parameters.AddWithValue("@ID", userId);
+                        command.Parameters.AddWithValue("@Heslo", hashedPassword);
+
+                        int rowsAffected = command.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            Console.WriteLine($"Heslo uživatele s ID '{userId}' bylo úspěšně změněno.");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Nepodařilo se změnit heslo uživatele s ID '{userId}'.");
+                        }
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                // Log the error
+                Console.WriteLine($"Chyba při změně hesla uživatele: {ex.Message}");
+                throw; // Re-throw the exception
+            }
+        }
+
+        public void UpdateUserProfileIcon(int userId, string profileIconPath)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(_connectionString))
+                {
+                    connection.Open();
+                    string sql = "UPDATE [devextlunch].[Uzivatel] SET ikona = @profileIconPath WHERE Uzivatel_ID = @userId";
+                    using (SqlCommand command = new SqlCommand(sql, connection))
+                    {
+                        command.Parameters.AddWithValue("@profileIconPath", profileIconPath);
+                        command.Parameters.AddWithValue("@userId", userId);
+                        command.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the error
+                Console.WriteLine($"Error updating user profile icon: {ex}");
+                throw; // Re-throw the exception to indicate failure
+            }
+        }
+        
+        public User GetUserById(int userId)
+{
+    try
+    {
+        using (SqlConnection connection = new SqlConnection(_connectionString))
+        {
+            connection.Open();
+            string sql = "SELECT Uzivatel_ID, jmeno, prijmeni, email, login, heslo, prava FROM [devextlunch].[Uzivatel] WHERE Uzivatel_ID = @ID";
+            using (SqlCommand command = new SqlCommand(sql, connection))
+            {
+                command.Parameters.AddWithValue("@ID", userId);
+
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        return new User
+                        {
+                            Uzivatele_ID = (int)reader["Uzivatel_ID"],
+                            jmeno = reader["jmeno"].ToString(),
+                            prijmeni = reader["prijmeni"].ToString(),
+                            email = reader["email"].ToString(),
+                            login = reader["login"].ToString(),
+                            heslo = reader["heslo"].ToString(), // Retrieve the hashed password
+                            prava = (Role)(int)reader["prava"]
+                        };
+                    }
+                    else
+                    {
+                        return null;
+                    }
+                }
+            }
+        }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error getting user by ID: {ex}");
+        return null;
+    }
+}
     }
 
     

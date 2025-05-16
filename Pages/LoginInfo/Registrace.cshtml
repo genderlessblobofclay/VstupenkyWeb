@@ -1,6 +1,6 @@
 @page
 @model VstupenkyWeb.Pages.LoginInfo.RegistraceModel
-@using VstupenkyWeb.Models 
+@using VstupenkyWeb.Models
 
 @{
     ViewData["Title"] = "Registrace";
@@ -8,7 +8,7 @@
 
 <h1>Registrace nového účtu</h1>
 
-<form method="post">
+<form method="post" enctype="multipart/form-data">
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
     <div class="form-group">
         <label for="login">Login:</label>
@@ -35,17 +35,22 @@
         <input type="text" class="form-control" asp-for="NovyUzivatel.prijmeni" required>
         <span asp-validation-for="NovyUzivatel.prijmeni" class="text-danger"></span>
     </div>
+    <div class="form-group">
+        <label for="profileIcon">Profilový obrázek:</label>
+        <input type="file" class="form-control" asp-for="NovyUzivatel.profileIcon">
+        <span asp-validation-for="NovyUzivatel.profileIcon" class="text-danger"></span>
+    </div>
 
     @if (User.IsInRole("Admin"))
     {
-    <div class="form-group">
-        <label for="prava">Role:</label>
-        <select class="form-control" asp-for="NovyUzivatel.prava">
-            <option value="@((int)VstupenkyWeb.Models.Role.Zakaznik)">Zákazník</option>
-            <option value="@((int)VstupenkyWeb.Models.Role.Admin)">Admin</option>
-        </select>
-        <span asp-validation-for="NovyUzivatel.prava" class="text-danger"></span>
-    </div>
+        <div class="form-group">
+            <label for="prava">Role:</label>
+            <select class="form-control" asp-for="NovyUzivatel.prava">
+                <option value="@((int)VstupenkyWeb.Models.Role.Zakaznik)">Zákazník</option>
+                <option value="@((int)VstupenkyWeb.Models.Role.Admin)">Admin</option>
+            </select>
+            <span asp-validation-for="NovyUzivatel.prava" class="text-danger"></span>
+        </div>
     }
     <button type="submit" class="btn btn-primary">Registrovat</button>
     <a asp-page="./Prihlaseni" class="btn btn-secondary">Zpět na přihlášení</a>

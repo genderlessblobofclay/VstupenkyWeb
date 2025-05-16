@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xz33qzOnTNkgojrCQ5C4zvjkToygNy/RXhFbscXucL0=",
+  "Hash": "+y5jrfql5PNmVyutGPhsBFGKApfb2cIP/r+Gr/F9UW0=",
   "Source": "VstupenkyWeb",
   "BasePath": "_content/VstupenkyWeb",
   "Mode": "Default",
@@ -290,12 +290,12 @@
       "OriginalItemSpec": "C:\\Users\\brigadnik1\\Desktop\\Praxe\\ConsoleApp1\\ConsoleApp1\\VstupenkyWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\brigadnik1\\Desktop\\Praxe\\ConsoleApp1\\ConsoleApp1\\VstupenkyWeb\\obj\\Debug\\net9.0\\compressed\\7insjaiag6-dts128j107.gz",
+      "Identity": "C:\\Users\\brigadnik1\\Desktop\\Praxe\\ConsoleApp1\\ConsoleApp1\\VstupenkyWeb\\obj\\Debug\\net9.0\\compressed\\7insjaiag6-4sjpe6lgcy.gz",
       "SourceId": "VstupenkyWeb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\brigadnik1\\Desktop\\Praxe\\ConsoleApp1\\ConsoleApp1\\VstupenkyWeb\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/VstupenkyWeb",
-      "RelativePath": "css/site#[.{fingerprint=dts128j107}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=4sjpe6lgcy}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -304,8 +304,8 @@
       "RelatedAsset": "C:\\Users\\brigadnik1\\Desktop\\Praxe\\ConsoleApp1\\ConsoleApp1\\VstupenkyWeb\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "iaz098opya",
-      "Integrity": "VsQbVS2bMQPe4XyHEpq/DYiAGA5IXOBpDowqhKE4QbQ=",
+      "Fingerprint": "fbvshxgisx",
+      "Integrity": "dR0HlGZjPPXrXviTWvp1C/yZorOXgGwtYChno2uLMMg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\brigadnik1\\Desktop\\Praxe\\ConsoleApp1\\ConsoleApp1\\VstupenkyWeb\\wwwroot\\css\\site.css"
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "dts128j107",
-      "Integrity": "IRpCYm1kA6s9TMzX1UyWrXGhI5Ys1mLdU4h3HiU1wbI=",
+      "Fingerprint": "4sjpe6lgcy",
+      "Integrity": "nNnSJlaBtOjw2lGuBMUC0YjRR9GOrpHrdJyzvFJ+dls=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1443,6 +1443,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\brigadnik1\\Desktop\\Praxe\\ConsoleApp1\\ConsoleApp1\\VstupenkyWeb\\wwwroot\\images\\9706577.png",
+      "SourceId": "VstupenkyWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\brigadnik1\\Desktop\\Praxe\\ConsoleApp1\\ConsoleApp1\\VstupenkyWeb\\wwwroot\\",
+      "BasePath": "_content/VstupenkyWeb",
+      "RelativePath": "images/9706577#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fli7i3wr60",
+      "Integrity": "41dredN/f75Rfj2hIyBnPq5JLfqhYJ4s2cXtxzeQqlA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\9706577.png"
+    },
+    {
+      "Identity": "C:\\Users\\brigadnik1\\Desktop\\Praxe\\ConsoleApp1\\ConsoleApp1\\VstupenkyWeb\\wwwroot\\images\\GqRR20waIAAcbPW-1536x1059.jpg",
+      "SourceId": "VstupenkyWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\brigadnik1\\Desktop\\Praxe\\ConsoleApp1\\ConsoleApp1\\VstupenkyWeb\\wwwroot\\",
+      "BasePath": "_content/VstupenkyWeb",
+      "RelativePath": "images/GqRR20waIAAcbPW-1536x1059#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9bxsq4iwc4",
+      "Integrity": "W16T4u7c6LOABQ/9uWf0YvQQsvNebmwlm5qitw8o0Fs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\GqRR20waIAAcbPW-1536x1059.jpg"
     },
     {
       "Identity": "C:\\Users\\brigadnik1\\Desktop\\Praxe\\ConsoleApp1\\ConsoleApp1\\VstupenkyWeb\\wwwroot\\js\\site.js",
@@ -2728,13 +2770,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\brigadnik1\\Desktop\\Praxe\\ConsoleApp1\\ConsoleApp1\\VstupenkyWeb\\obj\\Debug\\net9.0\\compressed\\7insjaiag6-dts128j107.gz",
+      "Route": "css/site.4sjpe6lgcy.css",
+      "AssetFile": "C:\\Users\\brigadnik1\\Desktop\\Praxe\\ConsoleApp1\\ConsoleApp1\\VstupenkyWeb\\obj\\Debug\\net9.0\\compressed\\7insjaiag6-4sjpe6lgcy.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002832861190"
+          "Quality": "0.002840909091"
         }
       ],
       "ResponseHeaders": [
@@ -2744,19 +2786,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "352"
+          "Value": "351"
         },
         {
           "Name": "ETag",
-          "Value": "\"VsQbVS2bMQPe4XyHEpq/DYiAGA5IXOBpDowqhKE4QbQ=\""
+          "Value": "\"dR0HlGZjPPXrXviTWvp1C/yZorOXgGwtYChno2uLMMg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 09:48:39 GMT"
+          "Value": "Fri, 16 May 2025 07:23:49 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -2772,18 +2814,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"IRpCYm1kA6s9TMzX1UyWrXGhI5Ys1mLdU4h3HiU1wbI=\""
+          "Value": "W/\"nNnSJlaBtOjw2lGuBMUC0YjRR9GOrpHrdJyzvFJ+dls=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "4sjpe6lgcy"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-IRpCYm1kA6s9TMzX1UyWrXGhI5Ys1mLdU4h3HiU1wbI="
+          "Value": "sha256-nNnSJlaBtOjw2lGuBMUC0YjRR9GOrpHrdJyzvFJ+dls="
         }
       ]
     },
     {
-      "Route": "css/site.css",
+      "Route": "css/site.4sjpe6lgcy.css",
       "AssetFile": "C:\\Users\\brigadnik1\\Desktop\\Praxe\\ConsoleApp1\\ConsoleApp1\\VstupenkyWeb\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2793,7 +2843,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "742"
+          "Value": "744"
         },
         {
           "Name": "Content-Type",
@@ -2801,121 +2851,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"IRpCYm1kA6s9TMzX1UyWrXGhI5Ys1mLdU4h3HiU1wbI=\""
+          "Value": "\"nNnSJlaBtOjw2lGuBMUC0YjRR9GOrpHrdJyzvFJ+dls=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 09:48:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-IRpCYm1kA6s9TMzX1UyWrXGhI5Ys1mLdU4h3HiU1wbI="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Users\\brigadnik1\\Desktop\\Praxe\\ConsoleApp1\\ConsoleApp1\\VstupenkyWeb\\obj\\Debug\\net9.0\\compressed\\7insjaiag6-dts128j107.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "352"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"VsQbVS2bMQPe4XyHEpq/DYiAGA5IXOBpDowqhKE4QbQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 09:48:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-VsQbVS2bMQPe4XyHEpq/DYiAGA5IXOBpDowqhKE4QbQ="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.dts128j107.css",
-      "AssetFile": "C:\\Users\\brigadnik1\\Desktop\\Praxe\\ConsoleApp1\\ConsoleApp1\\VstupenkyWeb\\obj\\Debug\\net9.0\\compressed\\7insjaiag6-dts128j107.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.002832861190"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "352"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"VsQbVS2bMQPe4XyHEpq/DYiAGA5IXOBpDowqhKE4QbQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 09:48:39 GMT"
+          "Value": "Fri, 16 May 2025 07:23:49 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"IRpCYm1kA6s9TMzX1UyWrXGhI5Ys1mLdU4h3HiU1wbI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "dts128j107"
+          "Value": "4sjpe6lgcy"
         },
         {
           "Name": "label",
@@ -2923,13 +2873,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-IRpCYm1kA6s9TMzX1UyWrXGhI5Ys1mLdU4h3HiU1wbI="
+          "Value": "sha256-nNnSJlaBtOjw2lGuBMUC0YjRR9GOrpHrdJyzvFJ+dls="
         }
       ]
     },
     {
-      "Route": "css/site.dts128j107.css",
-      "AssetFile": "C:\\Users\\brigadnik1\\Desktop\\Praxe\\ConsoleApp1\\ConsoleApp1\\VstupenkyWeb\\wwwroot\\css\\site.css",
+      "Route": "css/site.4sjpe6lgcy.css.gz",
+      "AssetFile": "C:\\Users\\brigadnik1\\Desktop\\Praxe\\ConsoleApp1\\ConsoleApp1\\VstupenkyWeb\\obj\\Debug\\net9.0\\compressed\\7insjaiag6-4sjpe6lgcy.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2938,7 +2888,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "742"
+          "Value": "351"
         },
         {
           "Name": "Content-Type",
@@ -2946,56 +2896,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"IRpCYm1kA6s9TMzX1UyWrXGhI5Ys1mLdU4h3HiU1wbI=\""
+          "Value": "\"dR0HlGZjPPXrXviTWvp1C/yZorOXgGwtYChno2uLMMg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 09:48:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "dts128j107"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-IRpCYm1kA6s9TMzX1UyWrXGhI5Ys1mLdU4h3HiU1wbI="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.dts128j107.css.gz",
-      "AssetFile": "C:\\Users\\brigadnik1\\Desktop\\Praxe\\ConsoleApp1\\ConsoleApp1\\VstupenkyWeb\\obj\\Debug\\net9.0\\compressed\\7insjaiag6-dts128j107.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "352"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"VsQbVS2bMQPe4XyHEpq/DYiAGA5IXOBpDowqhKE4QbQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 09:48:39 GMT"
+          "Value": "Fri, 16 May 2025 07:23:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3013,7 +2918,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "dts128j107"
+          "Value": "4sjpe6lgcy"
         },
         {
           "Name": "label",
@@ -3021,7 +2926,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-VsQbVS2bMQPe4XyHEpq/DYiAGA5IXOBpDowqhKE4QbQ="
+          "Value": "sha256-dR0HlGZjPPXrXviTWvp1C/yZorOXgGwtYChno2uLMMg="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\brigadnik1\\Desktop\\Praxe\\ConsoleApp1\\ConsoleApp1\\VstupenkyWeb\\obj\\Debug\\net9.0\\compressed\\7insjaiag6-4sjpe6lgcy.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002840909091"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "351"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dR0HlGZjPPXrXviTWvp1C/yZorOXgGwtYChno2uLMMg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 07:23:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"nNnSJlaBtOjw2lGuBMUC0YjRR9GOrpHrdJyzvFJ+dls=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nNnSJlaBtOjw2lGuBMUC0YjRR9GOrpHrdJyzvFJ+dls="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\brigadnik1\\Desktop\\Praxe\\ConsoleApp1\\ConsoleApp1\\VstupenkyWeb\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "744"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nNnSJlaBtOjw2lGuBMUC0YjRR9GOrpHrdJyzvFJ+dls=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 07:23:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nNnSJlaBtOjw2lGuBMUC0YjRR9GOrpHrdJyzvFJ+dls="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "C:\\Users\\brigadnik1\\Desktop\\Praxe\\ConsoleApp1\\ConsoleApp1\\VstupenkyWeb\\obj\\Debug\\net9.0\\compressed\\7insjaiag6-4sjpe6lgcy.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "351"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dR0HlGZjPPXrXviTWvp1C/yZorOXgGwtYChno2uLMMg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 07:23:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dR0HlGZjPPXrXviTWvp1C/yZorOXgGwtYChno2uLMMg="
         }
       ]
     },
@@ -3320,6 +3362,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0="
+        }
+      ]
+    },
+    {
+      "Route": "images/9706577.fli7i3wr60.png",
+      "AssetFile": "C:\\Users\\brigadnik1\\Desktop\\Praxe\\ConsoleApp1\\ConsoleApp1\\VstupenkyWeb\\wwwroot\\images\\9706577.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12057"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"41dredN/f75Rfj2hIyBnPq5JLfqhYJ4s2cXtxzeQqlA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 08:59:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fli7i3wr60"
+        },
+        {
+          "Name": "label",
+          "Value": "images/9706577.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-41dredN/f75Rfj2hIyBnPq5JLfqhYJ4s2cXtxzeQqlA="
+        }
+      ]
+    },
+    {
+      "Route": "images/9706577.png",
+      "AssetFile": "C:\\Users\\brigadnik1\\Desktop\\Praxe\\ConsoleApp1\\ConsoleApp1\\VstupenkyWeb\\wwwroot\\images\\9706577.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12057"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"41dredN/f75Rfj2hIyBnPq5JLfqhYJ4s2cXtxzeQqlA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 08:59:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-41dredN/f75Rfj2hIyBnPq5JLfqhYJ4s2cXtxzeQqlA="
+        }
+      ]
+    },
+    {
+      "Route": "images/GqRR20waIAAcbPW-1536x1059.9bxsq4iwc4.jpg",
+      "AssetFile": "C:\\Users\\brigadnik1\\Desktop\\Praxe\\ConsoleApp1\\ConsoleApp1\\VstupenkyWeb\\wwwroot\\images\\GqRR20waIAAcbPW-1536x1059.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "351500"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W16T4u7c6LOABQ/9uWf0YvQQsvNebmwlm5qitw8o0Fs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 08:59:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9bxsq4iwc4"
+        },
+        {
+          "Name": "label",
+          "Value": "images/GqRR20waIAAcbPW-1536x1059.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-W16T4u7c6LOABQ/9uWf0YvQQsvNebmwlm5qitw8o0Fs="
+        }
+      ]
+    },
+    {
+      "Route": "images/GqRR20waIAAcbPW-1536x1059.jpg",
+      "AssetFile": "C:\\Users\\brigadnik1\\Desktop\\Praxe\\ConsoleApp1\\ConsoleApp1\\VstupenkyWeb\\wwwroot\\images\\GqRR20waIAAcbPW-1536x1059.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "351500"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W16T4u7c6LOABQ/9uWf0YvQQsvNebmwlm5qitw8o0Fs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 08:59:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-W16T4u7c6LOABQ/9uWf0YvQQsvNebmwlm5qitw8o0Fs="
         }
       ]
     },

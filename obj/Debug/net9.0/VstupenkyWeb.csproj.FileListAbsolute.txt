@@ -160,4 +160,4 @@ C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug
 C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\bin\Debug\net9.0\Newtonsoft.Json.dll
 C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\bin\Debug\net9.0\SendGrid.dll
 C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\bin\Debug\net9.0\StarkbankEcdsa.dll
-C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\7insjaiag6-dts128j107.gz
+C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\7insjaiag6-4sjpe6lgcy.gz

@@ -104,50 +104,50 @@ namespace VstupenkyWeb.Pages
         }
 
         private User AuthenticateUser(string login, string heslo)
+{
+    using (SqlConnection connection = new SqlConnection(_connectionString))
+    {
+        try
         {
-            using (SqlConnection connection = new SqlConnection(_connectionString))
+            connection.Open();
+            string sql = "SELECT Uzivatel_ID, jmeno, prijmeni, email, login, heslo, prava FROM [devextlunch].[Uzivatel] WHERE login = @login"; // Include 'prava'
+            using (SqlCommand command = new SqlCommand(sql, connection))
             {
-                try
+                command.Parameters.AddWithValue("@login", login);
+
+                using (SqlDataReader reader = command.ExecuteReader())
                 {
-                    connection.Open();
-                    string sql = "SELECT Uzivatel_ID, jmeno, prijmeni, email, login, heslo, prava FROM [devextlunch].[Uzivatel] WHERE login = @login"; // Include 'prava'
-                    using (SqlCommand command = new SqlCommand(sql, connection))
+                    if (reader.Read())
                     {
-                        command.Parameters.AddWithValue("@login", login);
-
-                        using (SqlDataReader reader = command.ExecuteReader())
+                        var storedHashedPassword = reader["heslo"].ToString();
+                        var user = new User
                         {
-                            if (reader.Read())
-                            {
-                                var storedHashedPassword = reader["heslo"].ToString();
-                                var user = new User
-                                {
-                                    Uzivatele_ID = (int)reader["Uzivatel_ID"],
-                                    jmeno = reader["jmeno"] != DBNull.Value ? reader["jmeno"].ToString() : "", // Handle potential null values
-                                    prijmeni = reader["prijmeni"] != DBNull.Value ? reader["prijmeni"].ToString() : "", // Handle potential null values
-                                    email = reader["email"] != DBNull.Value ? reader["email"].ToString() : "", // Handle potential null values
-                                    login = reader["login"].ToString(),
-                                    prava = (Role)(int)reader["prava"] // Retrieve and cast 'prava'
-                                };
+                            Uzivatele_ID = (int)reader["Uzivatel_ID"],
+                            jmeno = reader["jmeno"] != DBNull.Value ? reader["jmeno"].ToString() : "", // Handle potential null values
+                            prijmeni = reader["prijmeni"] != DBNull.Value ? reader["prijmeni"].ToString() : "", // Handle potential null values
+                            email = reader["email"] != DBNull.Value ? reader["email"].ToString() : "", // Handle potential null values
+                            login = reader["login"].ToString(),
+                            prava = (Role)(int)reader["prava"] // Retrieve and cast 'prava'
+                        };
 
-                                // Verify the password using the LoginManager
-                                if (_loginManager.VerifyPassword(heslo, storedHashedPassword))
-                                {
-                                    return user;
-                                }
-                            }
-                            return null;
+                        // Verify the password using the LoginManager
+                        if (_loginManager.VerifyPassword(heslo, storedHashedPassword))
+                        {
+                            return user;
                         }
                     }
-                }
-                catch (Exception ex)
-                {
-                    ErrorMessage = "Chyba při připojení k databázi.";
-                    Console.WriteLine($"Chyba DB: {ex.Message}");
                     return null;
                 }
             }
         }
+        catch (Exception ex)
+        {
+            ErrorMessage = "Chyba při připojení k databázi.";
+            Console.WriteLine($"Chyba DB: {ex.Message}");
+            return null;
+        }
+    }
+}
 
         // Pomocná třída pro reprezentaci uživatele
         public class User
