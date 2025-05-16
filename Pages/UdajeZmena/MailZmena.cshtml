@@ -1,0 +1,16 @@
+@page
+@model VstupenkyWeb.Pages.UdajeZmena.MailZmenaModel
+@{
+    ViewData["Title"] = "Změna Emailu";
+}
+
+<h1>Změna Emailu</h1>
+
+<form method="post">
+    <div class="mb-3">
+        <label for="NewEmail" class="form-label">Nový Email</label>
+        <input type="email" class="form-control" id="NewEmail" asp-for="NewEmail" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Uložit Email</button>
+    <a asp-page="/EditProfilu" class="btn btn-secondary">Zpět na Profil</a>
+</form>

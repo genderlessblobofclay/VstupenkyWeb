@@ -16,21 +16,6 @@ namespace VstupenkyWeb.Pages
     [AllowAnonymous]
     public class IndexModel : PageModel
     {
-        private string GetRoleName(Role role)
-        {
-            switch (role)
-            {
-                case Role.Zakaznik:
-                    return "Zakaznik";
-                case Role.Navstevnik:
-                    return "Navstevnik";
-                case Role.Admin:
-                    return "Admin";
-                default:
-                    return "Navstevnik"; // Default role
-            }
-        }
-        public string SuccessMessage { get; set; } = ""; // Initialize
         private readonly string _connectionString;
         private readonly IConfiguration _configuration;
         private readonly LoginManager _loginManager; // Add LoginManager
@@ -76,7 +61,7 @@ namespace VstupenkyWeb.Pages
                     new Claim("Jmeno", user.jmeno), // Příklad přidání jména
                     new Claim("Prijmeni", user.prijmeni), // Příklad přidání příjmení
                     new Claim(ClaimTypes.Email, user.email), // Příklad přidání emailu
-                    new Claim(ClaimTypes.Role, GetRoleName(user.prava)) // Add the role claim
+                    new Claim(ClaimTypes.Role, user.prava.ToString()) // Add the role claim as integer
                     // Můžete přidat další claimy podle potřeby
                 };
 
@@ -91,9 +76,7 @@ namespace VstupenkyWeb.Pages
                 // Přihlášení uživatele pomocí Cookie Authentication
                 await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal, authProperties);
 
-                SuccessMessage = "Přihlášení proběhlo úspěšně!";
-                // Přesměrování až po nastavení zprávy, aby se zobrazila (pokud nechceš přesměrovávat okamžitě)
-                // return RedirectToPage("/Vstupenky/Rezervace");
+               
                 return RedirectToPage("/Vstupenky/Rezervace");
             }
             else
@@ -131,7 +114,9 @@ namespace VstupenkyWeb.Pages
                         };
 
                         // Verify the password using the LoginManager
-                        if (_loginManager.VerifyPassword(heslo, storedHashedPassword))
+                        var passwordHasher = new PasswordHasher<object>();
+                        var result = passwordHasher.VerifyHashedPassword(null, storedHashedPassword, heslo);
+                        if (result == PasswordVerificationResult.Success)
                         {
                             return user;
                         }
@@ -148,16 +133,5 @@ namespace VstupenkyWeb.Pages
         }
     }
 }
-
-        // Pomocná třída pro reprezentaci uživatele
-        public class User
-        {
-            public int Uzivatele_ID { get; set; }
-            public string jmeno { get; set; } = ""; // Initialize
-            public string prijmeni { get; set; } = ""; // Initialize
-            public string email { get; set; } = ""; // Initialize
-            public string login { get; set; } = ""; // Initialize
-            public Role prava { get; set; } // Add the Role property
-        }
     }
 }

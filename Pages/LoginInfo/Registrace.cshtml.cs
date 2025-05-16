@@ -75,20 +75,16 @@ namespace VstupenkyWeb.Pages.LoginInfo
                 {
 
                 }
-                else
-                {
-                    NovyUzivatel.prava = VstupenkyWeb.Models.Role.Navstevnik;
-                }
 
                 // Use the LoginManager to add the user
                 _loginManager.PridatUzivatele(
-                    NovyUzivatel.jmeno,
-                    NovyUzivatel.prijmeni,
-                    (int)NovyUzivatel.prava, // Pass the Role enum value as an integer
-                    NovyUzivatel.login,
-                    NovyUzivatel.heslo, // Pass the plain text password
-                    NovyUzivatel.email,
-                    profileIconPath // Pass the profile icon file path
+                NovyUzivatel.jmeno,
+                NovyUzivatel.prijmeni,
+                (int)NovyUzivatel.prava, // Pass the Role enum value as an integer
+                NovyUzivatel.login,
+                NovyUzivatel.heslo, // Pass the plain text password
+                NovyUzivatel.email,
+                profileIconPath // Pass the profile icon file path
                 );
             }
             catch (Exception ex)

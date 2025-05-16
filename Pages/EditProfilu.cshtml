@@ -18,15 +18,17 @@
 
     <dt class="col-sm-2">Heslo:</dt>
     <dd class="col-sm-10">
-        ********
-        <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#changePasswordModal">Změnit</button>
+        ********  
+        <a asp-page="/UdajeZmena/HesloZmena" class="btn btn-sm btn-outline-primary">Změnit</a>
     </dd>
 
     <dt class="col-sm-2">Email:</dt>
-    <dd class="col-sm-10">
-        @Model.Email
-        <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#changeEmailModal">Změnit</button>
-    </dd>
+<dd class="col-sm-10">
+    @Model.Email
+    <form method="post" asp-page="/UdajeZmena/MailZmena" style="display: inline;">
+        <button type="submit" class="btn btn-sm btn-outline-primary">Změnit</button>
+    </form>
+</dd>
 
     <dt class="col-sm-2">Profilový obrázek:</dt>
     <dd class="col-sm-10">
@@ -41,60 +43,6 @@
         <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#changeIconModal">Změnit</button>
     </dd>
 </dl>
-
-<!-- Change Password Modal -->
-<div class="modal fade" id="changePasswordModal" tabindex="-1" aria-labelledby="changePasswordModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="changePasswordModalLabel">Změnit Heslo</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form method="post" asp-page-handler="ChangePassword">
-                    <div class="mb-3">
-                        <label for="OldPassword" class="form-label">Stávající Heslo</label>
-                        <input type="password" class="form-control" id="OldPassword" name="OldPassword" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="NewPassword" class="form-label">Nové Heslo</label>
-                        <input type="password" class="form-control" id="NewPassword" name="NewPassword" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="ConfirmPassword" class="form-label">Potvrdit Nové Heslo</label>
-                        <input type="password" class="form-control" id="ConfirmPassword" name="ConfirmPassword" required>
-                    </div>
-                     @if (!string.IsNullOrEmpty(Model.ErrorMessage))
-                    {
-                        <div class="alert alert-danger">@Model.ErrorMessage</div>
-                    }
-                    <button type="submit" class="btn btn-primary">Uložit Heslo</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Change Email Modal -->
-<div class="modal fade" id="changeEmailModal" tabindex="-1" aria-labelledby="changeEmailModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="changeEmailModalLabel">Změnit Email</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form method="post" asp-page-handler="ChangeEmail">
-                    <div class="mb-3">
-                        <label for="NewEmail" class="form-label">Nový Email</label>
-                        <input type="email" class="form-control" id="NewEmail" name="NewEmail" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Uložit Email</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
 
 <!-- Change Icon Modal -->
 <div class="modal fade" id="changeIconModal" tabindex="-1" aria-labelledby="changeIconModalLabel" aria-hidden="true">

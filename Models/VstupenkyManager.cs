@@ -196,5 +196,28 @@ namespace VstupenkyWeb.Models
                 return false; // Error occurred, deny access
             }
         }
+
+
+        public void OdstranitVstupenkyProUzivatele(int userId)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(_connectionString))
+                {
+                    connection.Open();
+                    string sql = $"DELETE FROM {TabulkaVstupenky} WHERE Uzivatel_ID = @userId";
+                    using (SqlCommand command = new SqlCommand(sql, connection))
+                    {
+                        command.Parameters.AddWithValue("@userId", userId);
+                        int rowsAffected = command.ExecuteNonQuery();
+                        Console.WriteLine($"{rowsAffected} tickets deleted for user ID {userId}.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error deleting tickets for user ID {userId}: {ex.Message}");
+            }
+        }
     }
 }

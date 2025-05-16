@@ -1,0 +1,28 @@
+@page
+@model VstupenkyWeb.Pages.UdajeZmena.HesloZmenaModel
+@{
+    ViewData["Title"] = "Změna Hesla";
+}
+
+<h1>Změna Hesla</h1>
+
+<form method="post">
+    <div class="mb-3">
+        <label for="OldPassword" class="form-label">Stávající Heslo</label>
+        <input type="password" class="form-control" id="OldPassword" name="OldPassword" required>
+    </div>
+    <div class="mb-3">
+        <label for="NewPassword" class="form-label">Nové Heslo</label>
+        <input type="password" class="form-control" id="NewPassword" name="NewPassword" required>
+    </div>
+    <div class="mb-3">
+        <label for="ConfirmPassword" class="form-label">Potvrdit Nové Heslo</label>
+        <input type="password" class="form-control" id="ConfirmPassword" name="ConfirmPassword" required>
+    </div>
+    @if (!string.IsNullOrEmpty(Model.PasswordChangeErrorMessage))
+    {
+        <div class="alert alert-danger">@Model.PasswordChangeErrorMessage</div>
+    }
+    <button type="submit" class="btn btn-primary">Uložit Heslo</button>
+    <a asp-page="/EditProfilu" class="btn btn-secondary">Zpět na Profil</a>
+</form>

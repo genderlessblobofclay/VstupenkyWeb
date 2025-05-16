@@ -21,7 +21,6 @@ namespace VstupenkyWeb.Pages
         private readonly IConfiguration _configuration;
         private readonly string _connectionString;
         public string ErrorMessage { get; set; } = ""; // Initialize it here
-        public string PasswordChangeErrorMessage { get; set; } = ""; // Add this line
 
         public EditProfiluModel(LoginManager loginManager, IPasswordHasher<IdentityUser> passwordHasher, IConfiguration configuration)
         {
@@ -36,22 +35,6 @@ namespace VstupenkyWeb.Pages
         public string Login { get; set; }
         public string Email { get; set; }
         public string ProfileIconPath { get; set; }
-      
-        [BindProperty]
-        [EmailAddress]
-        public string NewEmail { get; set; }
-
-        [BindProperty]
-        [DataType(DataType.Password)]
-        public string NewPassword { get; set; }
-
-        [BindProperty]
-        [DataType(DataType.Password)]
-        public string ConfirmPassword { get; set; }
-
-        [BindProperty]
-        [DataType(DataType.Password)]
-        public string OldPassword { get; set; }
 
         [BindProperty]
         public IFormFile ProfileIcon { get; set; }
@@ -70,73 +53,6 @@ namespace VstupenkyWeb.Pages
             // Load user data
             LoadUserData(userId);
 
-            return Page();
-        }
-
-        public async Task<IActionResult> OnPostChangePasswordAsync()
-        {
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }
-
-            var userId = GetCurrentUserId();
-            var user = _loginManager.GetUserById(userId);
-
-            if (user == null)
-            {
-                PasswordChangeErrorMessage = "Uživatel nenalezen.";
-                return Page();
-            }
-
-            // Verify the old password
-            if (!_loginManager.VerifyPassword(OldPassword, user.heslo))
-            {
-                PasswordChangeErrorMessage = "Stávající heslo je neplatné.";
-                return Page();
-            }
-
-            // Check if the new passwords match
-            if (NewPassword != ConfirmPassword)
-            {
-                PasswordChangeErrorMessage = "Nová hesla se neshodují.";
-                return Page();
-            }
-
-            if (!string.IsNullOrEmpty(NewPassword))
-            {
-                _loginManager.UpdateUserPassword(userId, NewPassword, _passwordHasher);
-            }
-
-            LoadUserData(GetCurrentUserId());
-            return Page();
-        }
-
-        public async Task<IActionResult> OnPostChangeEmailAsync()
-        {
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }
-
-            var userId = GetCurrentUserId();
-            if (!string.IsNullOrEmpty(NewEmail))
-            {
-                _loginManager.UpdateUserEmail(userId, NewEmail);
-
-                // Update the email claim
-                var claims = new List<Claim>
-                {
-                    new Claim(ClaimTypes.Email, NewEmail),
-                };
-
-                var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-                var principal = new ClaimsPrincipal(identity);
-
-                await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
-            }
-
-            LoadUserData(GetCurrentUserId());
             return Page();
         }
 

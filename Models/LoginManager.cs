@@ -48,46 +48,39 @@ namespace VstupenkyWeb.Models
         private static string TabulkaUsers = "[devextlunch].[devextlunch].[Uzivatel]"; // Název vaší tabulky s uživateli
 
         public void PridatUzivatele(string jmeno, string prijmeni, int prava, string login, string heslo, string email, string profileIconPath)
+{
+    try
+    {
+        using (SqlConnection connection = new SqlConnection(_connectionString))
         {
-            try
+            connection.Open();
+            string sql = "INSERT INTO [devextlunch].[Uzivatel] (jmeno, prijmeni, prava, login, heslo, email, ikona) VALUES (@jmeno, @prijmeni, @prava, @login, @heslo, @email, @ikona)";
+            using (SqlCommand command = new SqlCommand(sql, connection))
             {
-                using (SqlConnection connection = new SqlConnection(_connectionString))
-                {
-                    connection.Open();
+                command.Parameters.AddWithValue("@jmeno", jmeno);
+                command.Parameters.AddWithValue("@prijmeni", prijmeni);
+                command.Parameters.AddWithValue("@prava", prava);
+                command.Parameters.AddWithValue("@login", login);
 
-                    // Hash the password using ASP.NET Core Identity's PasswordHasher
-                    var user = new IdentityUser(); // We only need this to hash the password.  We don't save it.
-                    string hashedPassword = _passwordHasher.HashPassword(user, heslo);
+                // Hash the password here
+                var passwordHasher = new PasswordHasher<object>();
+                string hashedPassword = passwordHasher.HashPassword(null, heslo);
 
-                    string sql = $"INSERT INTO {TabulkaUsers} (jmeno, prijmeni, prava, login, heslo, email, ikona) VALUES (@jmeno, @prijmeni, @prava, @login, @heslo, @email, @profileIconPath)";
-                    using (SqlCommand command = new SqlCommand(sql, connection))
-                    {
-                        command.Parameters.AddWithValue("@jmeno", jmeno);
-                        command.Parameters.AddWithValue("@prijmeni", prijmeni);
-                        command.Parameters.AddWithValue("@prava", prava);
-                        command.Parameters.AddWithValue("@login", login);
-                        command.Parameters.AddWithValue("@heslo", hashedPassword); // Store the hashed password
-                        command.Parameters.AddWithValue("@email", email);
-                        command.Parameters.AddWithValue("@profileIconPath", profileIconPath);
+                command.Parameters.AddWithValue("@heslo", hashedPassword);
+                command.Parameters.AddWithValue("@email", email);
+                command.Parameters.AddWithValue("@ikona", profileIconPath ?? (object)DBNull.Value);
 
-                        int rowsAffected = command.ExecuteNonQuery();
-                        if (rowsAffected > 0)
-                        {
-                            Console.WriteLine($"Uživatel s loginem '{login}' byl úspěšně registrován.");
-                        }
-                        else
-                        {
-                            Console.WriteLine($"Nepodařilo se registrovat uživatele s loginem '{login}'.");
-                        }
-                    }
-                }
+                command.ExecuteNonQuery();
             }
-            catch (SqlException ex)
-            {
-                Console.WriteLine($"Chyba při registraci uživatele: {ex.Message}");
-            }
-
         }
+    }
+    catch (Exception ex)
+    {
+        // Log the error
+        Console.WriteLine($"Error adding user: {ex}");
+        throw; // Re-throw the exception to indicate failure
+    }
+}
 
         public bool LoginExists(string login)
         {

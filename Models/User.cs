@@ -1,4 +1,5 @@
-using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
 
 namespace VstupenkyWeb.Models
 {
@@ -9,7 +10,7 @@ namespace VstupenkyWeb.Models
         public string jmeno { get; set; }
         public string prijmeni { get; set; }
         public string email { get; set; }
+        public string heslo { get; set; }
         public Role prava { get; set; }
-        public string heslo { get; set; } // Add this line
     }
 }
