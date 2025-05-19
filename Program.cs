@@ -26,6 +26,8 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.LoginPath = "/Index";
     });
 
+    
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

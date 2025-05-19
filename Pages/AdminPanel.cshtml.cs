@@ -158,7 +158,7 @@ namespace VstupenkyWeb.Pages
             }
         }
 
-        private async Task InvalidateUserCookie(int userId)
+       private async Task InvalidateUserCookie(int userId)
         {
             // Find the user
             var user = _loginManager.GetUserById(userId);
@@ -168,28 +168,6 @@ namespace VstupenkyWeb.Pages
             {
                 // Clear existing cookie
                 await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-
-                // Create new claims
-                var claims = new List<Claim>
-                {
-                    new Claim(ClaimTypes.NameIdentifier, user.Uzivatele_ID.ToString()),
-                    new Claim(ClaimTypes.Name, user.login),
-                    new Claim("Jmeno", user.jmeno),
-                    new Claim("Prijmeni", user.prijmeni),
-                    new Claim(ClaimTypes.Email, user.email),
-                    new Claim(ClaimTypes.Role, ((int)user.prava).ToString())
-                };
-
-                // Create new identity
-                var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-                var authProperties = new AuthenticationProperties
-                {
-                    IsPersistent = false,
-                };
-                var principal = new ClaimsPrincipal(claimsIdentity);
-
-                // Sign in again
-                await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal, authProperties);
             }
         }
     }
