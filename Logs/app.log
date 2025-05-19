@@ -1,0 +1,396 @@
+19.05.2025 9:52:55 [Information] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\brigadnik1\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+19.05.2025 9:52:56 [Information] Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5024
+19.05.2025 9:52:56 [Information] Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+19.05.2025 9:52:56 [Information] Microsoft.Hosting.Lifetime - Hosting environment: Development
+19.05.2025 9:52:56 [Information] Microsoft.Hosting.Lifetime - Content root path: C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb
+19.05.2025 9:52:58 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/ - - -
+19.05.2025 9:52:58 [Warning] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - Failed to determine the https port for redirect.
+19.05.2025 9:52:58 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET / at 05/19/2025 09:52:58
+19.05.2025 9:52:58 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/Index'
+19.05.2025 9:52:58 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Route matched with {page = "/Index"}. Executing page /Index
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing handler method VstupenkyWeb.Pages.IndexModel.OnGet - ModelState is Valid
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed handler method OnGet, returned result .
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing an implicit handler method - ModelState is Valid
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed page /Index in 412.4291ms
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/Index'
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/ - 200 - text/html;+charset=utf-8 812.0703ms
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - - -
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/css/site.4sjpe6lgcy.css - - -
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/VstupenkyWeb.unlkeeiled.styles.css - - -
+19.05.2025 9:52:59 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /css/site.4sjpe6lgcy.css at 05/19/2025 09:52:59
+19.05.2025 9:52:59 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /lib/jquery/dist/jquery.min.o1o13a6vjx.js at 05/19/2025 09:52:59
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - - -
+19.05.2025 9:52:59 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js at 05/19/2025 09:52:59
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'css/site.4sjpe6lgcy.css'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\7insjaiag6-4sjpe6lgcy.gz'
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\2c6dz72yzp-46ein0sx1k.gz'
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'VstupenkyWeb.unlkeeiled.styles.css'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\aqzp9zc1iv-unlkeeiled.gz'
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - 200 232871 text/css 125.8053ms
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - 200 80764 text/javascript 101.7489ms
+19.05.2025 9:52:59 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /js/site.xtxxf3hu2r.js at 05/19/2025 09:52:59
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'js/site.xtxxf3hu2r.js'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\vuzvxzc0yr-xtxxf3hu2r.gz'
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/jquery/dist/jquery.min.o1o13a6vjx.js - 200 87576 text/javascript 140.0328ms
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/lib/jquery-validation/dist/jquery.validate.min.ag7o75518u.js - - -
+19.05.2025 9:52:59 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /lib/jquery-validation/dist/jquery.validate.min.ag7o75518u.js at 05/19/2025 09:52:59
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'lib/jquery-validation/dist/jquery.validate.min.ag7o75518u.js'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\mly4y2w924-ag7o75518u.gz'
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/jquery-validation/dist/jquery.validate.min.ag7o75518u.js - 200 25341 text/javascript 10.9775ms
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.4v8eqarkd7.js - - -
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/js/site.xtxxf3hu2r.js - 200 264 text/javascript 157.1238ms
+19.05.2025 9:52:59 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.4v8eqarkd7.js at 05/19/2025 09:52:59
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.4v8eqarkd7.js'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\dq1dyi0scb-4v8eqarkd7.gz'
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:52:59 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.4v8eqarkd7.js - 200 5857 text/javascript 10.4869ms
+19.05.2025 9:53:08 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/AdminPanel - - -
+19.05.2025 9:53:08 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /AdminPanel at 05/19/2025 09:53:08
+19.05.2025 9:53:08 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/AdminPanel'
+19.05.2025 9:53:08 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Route matched with {page = "/AdminPanel"}. Executing page /AdminPanel
+19.05.2025 9:53:08 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing handler method VstupenkyWeb.Pages.AdminPanelModel.OnGet - ModelState is Valid
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed handler method OnGet, returned result .
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing an implicit handler method - ModelState is Valid
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed page /AdminPanel in 578.1263ms
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/AdminPanel'
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/AdminPanel - 200 - text/html;+charset=utf-8 594.6187ms
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - - -
+19.05.2025 9:53:09 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css at 05/19/2025 09:53:09
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/css/site.4sjpe6lgcy.css - - -
+19.05.2025 9:53:09 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /css/site.4sjpe6lgcy.css at 05/19/2025 09:53:09
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/VstupenkyWeb.unlkeeiled.styles.css - - -
+19.05.2025 9:53:09 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /VstupenkyWeb.unlkeeiled.styles.css at 05/19/2025 09:53:09
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/js/site.xtxxf3hu2r.js - - -
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - - -
+19.05.2025 9:53:09 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /js/site.xtxxf3hu2r.js at 05/19/2025 09:53:09
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'js/site.xtxxf3hu2r.js'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\vuzvxzc0yr-xtxxf3hu2r.gz'
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/js/site.xtxxf3hu2r.js - 200 264 text/javascript 12.6975ms
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\2c6dz72yzp-46ein0sx1k.gz'
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - 200 232871 text/css 56.2729ms
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/VstupenkyWeb.unlkeeiled.styles.css - 200 1163 text/css 36.0254ms
+19.05.2025 9:53:09 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /lib/jquery/dist/jquery.min.o1o13a6vjx.js at 05/19/2025 09:53:09
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'lib/jquery/dist/jquery.min.o1o13a6vjx.js'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\9031e1xdtr-o1o13a6vjx.gz'
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/jquery/dist/jquery.min.o1o13a6vjx.js - 200 87576 text/javascript 79.9574ms
+19.05.2025 9:53:09 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js at 05/19/2025 09:53:09
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\a17a1fubix-493y06b0oq.gz'
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:09 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - 200 80764 text/javascript 102.8819ms
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/Vstupenky/TabulkaVstupenky - - -
+19.05.2025 9:53:33 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /Vstupenky/TabulkaVstupenky at 05/19/2025 09:53:33
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/Vstupenky/TabulkaVstupenky'
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Route matched with {page = "/Vstupenky/TabulkaVstupenky"}. Executing page /Vstupenky/TabulkaVstupenky
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing handler method VstupenkyWeb.Pages.Vstupenky.TabulkaVstupenkyModel.OnGet - ModelState is Valid
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed handler method OnGet, returned result .
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing an implicit handler method - ModelState is Valid
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed page /Vstupenky/TabulkaVstupenky in 41.3041ms
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/Vstupenky/TabulkaVstupenky'
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/Vstupenky/TabulkaVstupenky - 200 - text/html;+charset=utf-8 52.1851ms
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - - -
+19.05.2025 9:53:33 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css at 05/19/2025 09:53:33
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/css/site.4sjpe6lgcy.css - - -
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/lib/jquery/dist/jquery.min.o1o13a6vjx.js - - -
+19.05.2025 9:53:33 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /lib/jquery/dist/jquery.min.o1o13a6vjx.js at 05/19/2025 09:53:33
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:33 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /css/site.4sjpe6lgcy.css at 05/19/2025 09:53:33
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/VstupenkyWeb.unlkeeiled.styles.css - - -
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'css/site.4sjpe6lgcy.css'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\7insjaiag6-4sjpe6lgcy.gz'
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\2c6dz72yzp-46ein0sx1k.gz'
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - 200 232871 text/css 31.2439ms
+19.05.2025 9:53:33 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /VstupenkyWeb.unlkeeiled.styles.css at 05/19/2025 09:53:33
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'lib/jquery/dist/jquery.min.o1o13a6vjx.js'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\9031e1xdtr-o1o13a6vjx.gz'
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/jquery/dist/jquery.min.o1o13a6vjx.js - 200 87576 text/javascript 12.0173ms
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'VstupenkyWeb.unlkeeiled.styles.css'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\aqzp9zc1iv-unlkeeiled.gz'
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/VstupenkyWeb.unlkeeiled.styles.css - 200 1163 text/css 8.9900ms
+19.05.2025 9:53:33 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js at 05/19/2025 09:53:33
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:33 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /js/site.xtxxf3hu2r.js at 05/19/2025 09:53:33
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\a17a1fubix-493y06b0oq.gz'
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'js/site.xtxxf3hu2r.js'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\vuzvxzc0yr-xtxxf3hu2r.gz'
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/js/site.xtxxf3hu2r.js - 200 264 text/javascript 16.4373ms
+19.05.2025 9:53:33 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - 200 80764 text/javascript 21.2201ms
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/AdminPanel - - -
+19.05.2025 9:53:39 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /AdminPanel at 05/19/2025 09:53:39
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/AdminPanel'
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Route matched with {page = "/AdminPanel"}. Executing page /AdminPanel
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing handler method VstupenkyWeb.Pages.AdminPanelModel.OnGet - ModelState is Valid
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed handler method OnGet, returned result .
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing an implicit handler method - ModelState is Valid
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed page /AdminPanel in 21.1867ms
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/AdminPanel'
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/AdminPanel - 200 - text/html;+charset=utf-8 26.5204ms
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - - -
+19.05.2025 9:53:39 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css at 05/19/2025 09:53:39
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/css/site.4sjpe6lgcy.css - - -
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/VstupenkyWeb.unlkeeiled.styles.css - - -
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/lib/jquery/dist/jquery.min.o1o13a6vjx.js - - -
+19.05.2025 9:53:39 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /VstupenkyWeb.unlkeeiled.styles.css at 05/19/2025 09:53:39
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/js/site.xtxxf3hu2r.js - - -
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'VstupenkyWeb.unlkeeiled.styles.css'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\aqzp9zc1iv-unlkeeiled.gz'
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\2c6dz72yzp-46ein0sx1k.gz'
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/css/site.4sjpe6lgcy.css - 200 777 text/css 30.8346ms
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/VstupenkyWeb.unlkeeiled.styles.css - 200 1163 text/css 32.9872ms
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'js/site.xtxxf3hu2r.js'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\vuzvxzc0yr-xtxxf3hu2r.gz'
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/js/site.xtxxf3hu2r.js - 200 264 text/javascript 29.5217ms
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\a17a1fubix-493y06b0oq.gz'
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - 200 80764 text/javascript 35.8794ms
+19.05.2025 9:53:39 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/jquery/dist/jquery.min.o1o13a6vjx.js - 200 87576 text/javascript 44.3820ms
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5024/AdminPanel?id=27&handler=Delete - application/x-www-form-urlencoded 225
+19.05.2025 9:53:43 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action POST /AdminPanel at 05/19/2025 09:53:43
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/AdminPanel'
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Route matched with {page = "/AdminPanel"}. Executing page /AdminPanel
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing handler method VstupenkyWeb.Pages.AdminPanelModel.OnPostDelete - ModelState is Valid
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed handler method OnPostDelete, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed page /AdminPanel in 94.9883ms
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/AdminPanel'
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5024/AdminPanel?id=27&handler=Delete - 200 - text/html;+charset=utf-8 98.6170ms
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - - -
+19.05.2025 9:53:43 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css at 05/19/2025 09:53:43
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/css/site.4sjpe6lgcy.css - - -
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/js/site.xtxxf3hu2r.js - - -
+19.05.2025 9:53:43 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /css/site.4sjpe6lgcy.css at 05/19/2025 09:53:43
+19.05.2025 9:53:43 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /js/site.xtxxf3hu2r.js at 05/19/2025 09:53:43
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:43 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /lib/jquery/dist/jquery.min.o1o13a6vjx.js at 05/19/2025 09:53:43
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'js/site.xtxxf3hu2r.js'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\vuzvxzc0yr-xtxxf3hu2r.gz'
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'css/site.4sjpe6lgcy.css'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\7insjaiag6-4sjpe6lgcy.gz'
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/css/site.4sjpe6lgcy.css - 200 777 text/css 11.5546ms
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'VstupenkyWeb.unlkeeiled.styles.css'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\aqzp9zc1iv-unlkeeiled.gz'
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/VstupenkyWeb.unlkeeiled.styles.css - 200 1163 text/css 20.0709ms
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/js/site.xtxxf3hu2r.js - 200 264 text/javascript 6.9642ms
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'lib/jquery/dist/jquery.min.o1o13a6vjx.js'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\9031e1xdtr-o1o13a6vjx.gz'
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/jquery/dist/jquery.min.o1o13a6vjx.js - 200 87576 text/javascript 41.7332ms
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\a17a1fubix-493y06b0oq.gz'
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 9:53:43 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - 200 80764 text/javascript 49.4208ms
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/Odhlaseni - - -
+19.05.2025 10:18:31 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /Odhlaseni at 05/19/2025 10:18:31
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/Odhlaseni'
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Route matched with {page = "/Odhlaseni"}. Executing page /Odhlaseni
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing handler method VstupenkyWeb.Pages.OdhlaseniModel.OnGet - ModelState is Valid
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Cookies signed out.
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed handler method OnGet, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult.
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Mvc.RedirectToRouteResult - Executing RedirectToPageResult, redirecting to /Index.
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed page /Odhlaseni in 16.8271ms
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/Odhlaseni'
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/Odhlaseni - 302 0 - 28.2574ms
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/ - - -
+19.05.2025 10:18:31 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User Anonymous (Anonymous) performed action GET / at 05/19/2025 10:18:31
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/Index'
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Route matched with {page = "/Index"}. Executing page /Index
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing handler method VstupenkyWeb.Pages.IndexModel.OnGet - ModelState is Valid
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed handler method OnGet, returned result .
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing an implicit handler method - ModelState is Valid
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed page /Index in 8.6812ms
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/Index'
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/ - 200 - text/html;+charset=utf-8 12.5864ms
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - - -
+19.05.2025 10:18:31 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User Anonymous (Anonymous) performed action GET /lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css at 05/19/2025 10:18:31
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/lib/jquery/dist/jquery.min.o1o13a6vjx.js - - -
+19.05.2025 10:18:31 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User Anonymous (Anonymous) performed action GET /lib/jquery/dist/jquery.min.o1o13a6vjx.js at 05/19/2025 10:18:31
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/VstupenkyWeb.unlkeeiled.styles.css - - -
+19.05.2025 10:18:31 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User Anonymous (Anonymous) performed action GET /VstupenkyWeb.unlkeeiled.styles.css at 05/19/2025 10:18:31
+19.05.2025 10:18:31 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User Anonymous (Anonymous) performed action GET /css/site.4sjpe6lgcy.css at 05/19/2025 10:18:31
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:18:31 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User Anonymous (Anonymous) performed action GET /lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js at 05/19/2025 10:18:31
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/VstupenkyWeb.unlkeeiled.styles.css - 200 1163 text/css 10.6123ms
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/jquery/dist/jquery.min.o1o13a6vjx.js - 200 87576 text/javascript 14.9750ms
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - 200 80764 text/javascript 10.8935ms
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/lib/jquery-validation/dist/jquery.validate.min.ag7o75518u.js - - -
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\2c6dz72yzp-46ein0sx1k.gz'
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - 200 232871 text/css 53.2664ms
+19.05.2025 10:18:31 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User Anonymous (Anonymous) performed action GET /lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.4v8eqarkd7.js at 05/19/2025 10:18:31
+19.05.2025 10:18:31 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User Anonymous (Anonymous) performed action GET /lib/jquery-validation/dist/jquery.validate.min.ag7o75518u.js at 05/19/2025 10:18:31
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'lib/jquery-validation/dist/jquery.validate.min.ag7o75518u.js'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\mly4y2w924-ag7o75518u.gz'
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/jquery-validation/dist/jquery.validate.min.ag7o75518u.js - 200 25341 text/javascript 32.3090ms
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.4v8eqarkd7.js'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\dq1dyi0scb-4v8eqarkd7.gz'
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:18:31 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.4v8eqarkd7.js - 200 5857 text/javascript 35.1752ms
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5024/ - application/x-www-form-urlencoded 207
+19.05.2025 10:18:39 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User Anonymous (Anonymous) performed action POST / at 05/19/2025 10:18:39
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/Index'
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Route matched with {page = "/Index"}. Executing page /Index
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing handler method VstupenkyWeb.Pages.IndexModel.OnPostAsync - ModelState is Valid
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Cookies signed in.
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult.
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Mvc.RedirectToRouteResult - Executing RedirectToPageResult, redirecting to /Vstupenky/Rezervace.
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed page /Index in 375.6057ms
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/Index'
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5024/ - 302 0 - 378.9833ms
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/Vstupenky/Rezervace - - -
+19.05.2025 10:18:39 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /Vstupenky/Rezervace at 05/19/2025 10:18:39
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/Vstupenky/Rezervace'
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Route matched with {page = "/Vstupenky/Rezervace"}. Executing page /Vstupenky/Rezervace
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing handler method VstupenkyWeb.Pages.IndexModel.OnGet - ModelState is Valid
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed handler method OnGet, returned result .
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing an implicit handler method - ModelState is Valid
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed page /Vstupenky/Rezervace in 4.0132ms
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/Vstupenky/Rezervace'
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/Vstupenky/Rezervace - 200 - text/html;+charset=utf-8 9.4791ms
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - - -
+19.05.2025 10:18:39 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css at 05/19/2025 10:18:39
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/css/site.4sjpe6lgcy.css - - -
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/lib/jquery/dist/jquery.min.o1o13a6vjx.js - - -
+19.05.2025 10:18:39 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /css/site.4sjpe6lgcy.css at 05/19/2025 10:18:39
+19.05.2025 10:18:39 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /VstupenkyWeb.unlkeeiled.styles.css at 05/19/2025 10:18:39
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - - -
+19.05.2025 10:18:39 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js at 05/19/2025 10:18:39
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/VstupenkyWeb.unlkeeiled.styles.css - 200 1163 text/css 12.1370ms
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'js/site.xtxxf3hu2r.js'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\vuzvxzc0yr-xtxxf3hu2r.gz'
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/js/site.xtxxf3hu2r.js - 200 264 text/javascript 11.1275ms
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/css/site.4sjpe6lgcy.css - 200 777 text/css 17.1757ms
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/jquery/dist/jquery.min.o1o13a6vjx.js - 200 87576 text/javascript 17.6930ms
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\2c6dz72yzp-46ein0sx1k.gz'
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - 200 232871 text/css 26.0735ms
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\a17a1fubix-493y06b0oq.gz'
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:18:39 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - 200 80764 text/javascript 19.6688ms
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/Vstupenky/Pridat - - -
+19.05.2025 10:30:33 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /Vstupenky/Pridat at 05/19/2025 10:30:33
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/Vstupenky/Pridat'
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Route matched with {page = "/Vstupenky/Pridat"}. Executing page /Vstupenky/Pridat
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing an implicit handler method - ModelState is Valid
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed page /Vstupenky/Pridat in 17.9303ms
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/Vstupenky/Pridat'
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/Vstupenky/Pridat - 200 - text/html;+charset=utf-8 30.2490ms
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - - -
+19.05.2025 10:30:33 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css at 05/19/2025 10:30:33
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/css/site.4sjpe6lgcy.css - - -
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/VstupenkyWeb.unlkeeiled.styles.css - - -
+19.05.2025 10:30:33 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /VstupenkyWeb.unlkeeiled.styles.css at 05/19/2025 10:30:33
+19.05.2025 10:30:33 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /css/site.4sjpe6lgcy.css at 05/19/2025 10:30:33
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/lib/jquery/dist/jquery.min.o1o13a6vjx.js - - -
+19.05.2025 10:30:33 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /lib/jquery/dist/jquery.min.o1o13a6vjx.js at 05/19/2025 10:30:33
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'css/site.4sjpe6lgcy.css'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\7insjaiag6-4sjpe6lgcy.gz'
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/css/site.4sjpe6lgcy.css - 200 777 text/css 12.0852ms
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - - -
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/js/site.xtxxf3hu2r.js - - -
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\2c6dz72yzp-46ein0sx1k.gz'
+19.05.2025 10:30:33 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /js/site.xtxxf3hu2r.js at 05/19/2025 10:30:33
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/VstupenkyWeb.unlkeeiled.styles.css - 200 1163 text/css 20.3249ms
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'lib/jquery/dist/jquery.min.o1o13a6vjx.js'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\9031e1xdtr-o1o13a6vjx.gz'
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'js/site.xtxxf3hu2r.js'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\vuzvxzc0yr-xtxxf3hu2r.gz'
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\a17a1fubix-493y06b0oq.gz'
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - 200 80764 text/javascript 18.1679ms
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - 200 232871 text/css 50.6920ms
+19.05.2025 10:30:33 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/jquery/dist/jquery.min.o1o13a6vjx.js - 200 87576 text/javascript 40.3603ms
+19.05.2025 10:30:40 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5024/Vstupenky/Pridat - application/x-www-form-urlencoded 278
+19.05.2025 10:30:40 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action POST /Vstupenky/Pridat at 05/19/2025 10:30:40
+19.05.2025 10:30:40 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/Vstupenky/Pridat'
+19.05.2025 10:30:40 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Route matched with {page = "/Vstupenky/Pridat"}. Executing page /Vstupenky/Pridat
+19.05.2025 10:30:40 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing handler method VstupenkyWeb.Pages.Vstupenky.PridatModel.OnPost - ModelState is Valid
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult.
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Mvc.RedirectToRouteResult - Executing RedirectToPageResult, redirecting to ./TabulkaVstupenky.
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed page /Vstupenky/Pridat in 427.0054ms
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/Vstupenky/Pridat'
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5024/Vstupenky/Pridat - 302 0 - 432.9484ms
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/Vstupenky/TabulkaVstupenky - - -
+19.05.2025 10:30:41 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /Vstupenky/TabulkaVstupenky at 05/19/2025 10:30:41
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/Vstupenky/TabulkaVstupenky'
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Route matched with {page = "/Vstupenky/TabulkaVstupenky"}. Executing page /Vstupenky/TabulkaVstupenky
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing handler method VstupenkyWeb.Pages.Vstupenky.TabulkaVstupenkyModel.OnGet - ModelState is Valid
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed handler method OnGet, returned result .
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing an implicit handler method - ModelState is Valid
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed page /Vstupenky/TabulkaVstupenky in 20.8286ms
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/Vstupenky/TabulkaVstupenky'
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/Vstupenky/TabulkaVstupenky - 200 - text/html;+charset=utf-8 26.4737ms
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - - -
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/css/site.4sjpe6lgcy.css - - -
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/VstupenkyWeb.unlkeeiled.styles.css - - -
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js - - -
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/js/site.xtxxf3hu2r.js - - -
+19.05.2025 10:30:41 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js at 05/19/2025 10:30:41
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:30:41 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css at 05/19/2025 10:30:41
+19.05.2025 10:30:41 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /css/site.4sjpe6lgcy.css at 05/19/2025 10:30:41
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'css/site.4sjpe6lgcy.css'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\7insjaiag6-4sjpe6lgcy.gz'
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/css/site.4sjpe6lgcy.css - 200 777 text/css 10.8654ms
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\2c6dz72yzp-46ein0sx1k.gz'
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css - 200 232871 text/css 23.8320ms
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/VstupenkyWeb.unlkeeiled.styles.css - 200 1163 text/css 26.2936ms
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker - Sending file. Request path: 'js/site.xtxxf3hu2r.js'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\compressed\vuzvxzc0yr-xtxxf3hu2r.gz'
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/js/site.xtxxf3hu2r.js - 200 264 text/javascript 28.0362ms
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+19.05.2025 10:30:41 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/jquery/dist/jquery.min.o1o13a6vjx.js - 200 87576 text/javascript 30.6684ms

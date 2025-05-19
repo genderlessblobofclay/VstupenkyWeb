@@ -1,5 +1,10 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Logging.Configuration;
+using Microsoft.Extensions.Logging.EventLog;
+using VstupenkyWeb.Extensions; // Add this line
+using VstupenkyWeb.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,7 +31,20 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.LoginPath = "/Index";
     });
 
-    
+builder.Logging.AddConfiguration(builder.Configuration.GetSection("Logging"));
+builder.Logging.AddConsole();
+builder.Logging.AddDebug();
+builder.Logging.AddEventSourceLogger();
+
+// Enable Windows Event Log provider only on Windows
+if (OperatingSystem.IsWindows())
+{
+    builder.Logging.AddEventLog();
+}
+
+// Add file logger
+builder.Services.Configure<FileLoggerOptions>(builder.Configuration.GetSection("Logging:File"));
+builder.Logging.AddFile(builder.Configuration.GetSection("Logging:File"));
 
 var app = builder.Build();
 
@@ -38,11 +56,14 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.UseActionLogging();
 
 app.MapRazorPages();
 //app.UseHttpsRedirection();

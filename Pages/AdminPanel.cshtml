@@ -34,7 +34,7 @@
                 <td>@user.prijmeni</td>
                 <td>@user.email</td>
                 <td>
-                    <form method="post" asp-page-handler="UpdateRole" asp-route-id="@user.Uzivatele_ID">
+                    <form method="post" asp-page-handler="UpdateRole" asp-route-id="@user.Uzivatele_ID" onsubmit="return confirm('Opravdu chcete změnit roli tohoto účtu?');">
                         <select class="form-control" name="NewRole">
                             @foreach (var role in Enum.GetValues(typeof(Role)))
                             {
