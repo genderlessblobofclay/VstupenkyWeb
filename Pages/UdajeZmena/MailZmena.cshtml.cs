@@ -30,38 +30,38 @@ namespace VstupenkyWeb.Pages.UdajeZmena
         }
 
         public async Task<IActionResult> OnPostAsync()
-{
-    if (!ModelState.IsValid)
-    {
-        return Page();
-    }
-
-    var userId = GetCurrentUserId();
-    if (!string.IsNullOrEmpty(NewEmail))
-    {
-        _loginManager.UpdateUserEmail(userId, NewEmail);
-
-        // Get the existing claims
-        var claims = User.Claims.ToList();
-
-        // Find the existing email claim and replace it
-        var emailClaim = claims.FirstOrDefault(c => c.Type == ClaimTypes.Email);
-        if (emailClaim != null)
         {
-            claims.Remove(emailClaim);
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+
+            var userId = GetCurrentUserId();
+            if (!string.IsNullOrEmpty(NewEmail))
+            {
+                 _loginManager.UpdateUserEmail(userId, NewEmail);
+
+                // Get the existing claims
+                 var claims = User.Claims.ToList();
+
+                 // Find the existing email claim and replace it
+                var emailClaim = claims.FirstOrDefault(c => c.Type == ClaimTypes.Email);
+                if (emailClaim != null)
+                {
+                    claims.Remove(emailClaim);
+                }
+                claims.Add(new Claim(ClaimTypes.Email, NewEmail));
+
+                // Create a new ClaimsIdentity with the updated claims
+                var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                var principal = new ClaimsPrincipal(identity);
+
+                // Sign in with the updated principal
+                await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
+            }
+
+            return RedirectToPage("/EditProfilu");
         }
-        claims.Add(new Claim(ClaimTypes.Email, NewEmail));
-
-        // Create a new ClaimsIdentity with the updated claims
-        var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-        var principal = new ClaimsPrincipal(identity);
-
-        // Sign in with the updated principal
-        await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
-    }
-
-    return RedirectToPage("/EditProfilu");
-}
 
         private int GetCurrentUserId()
         {

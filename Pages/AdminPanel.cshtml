@@ -43,11 +43,10 @@
                         </select>
                         <button type="submit" class="btn btn-primary btn-sm">Změnit Roli</button>
                     </form>
-                </td>
                 <td>
-                    <form method="post" asp-page-handler="Delete" asp-route-id="@user.Uzivatele_ID">
-                        <button type="submit" class="btn btn-danger btn-sm">Smazat Účet</button>
-                    </form>
+                <form method="post" asp-page-handler="Delete" asp-route-id="@user.Uzivatele_ID" onsubmit="return confirm('Opravdu chcete smazat tento účet?');">
+                <button type="submit" class="btn btn-danger btn-sm">Smazat Účet</button>
+                </form>
                 </td>
             </tr>
         }

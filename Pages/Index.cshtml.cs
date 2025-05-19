@@ -87,51 +87,51 @@ namespace VstupenkyWeb.Pages
         }
 
         private User AuthenticateUser(string login, string heslo)
-{
-    using (SqlConnection connection = new SqlConnection(_connectionString))
-    {
-        try
         {
-            connection.Open();
-            string sql = "SELECT Uzivatel_ID, jmeno, prijmeni, email, login, heslo, prava FROM [devextlunch].[Uzivatel] WHERE login = @login"; // Include 'prava'
-            using (SqlCommand command = new SqlCommand(sql, connection))
+            using (SqlConnection connection = new SqlConnection(_connectionString))
             {
-                command.Parameters.AddWithValue("@login", login);
-
-                using (SqlDataReader reader = command.ExecuteReader())
+                try
                 {
-                    if (reader.Read())
+                    connection.Open();
+                    string sql = "SELECT Uzivatel_ID, jmeno, prijmeni, email, login, heslo, prava FROM [devextlunch].[Uzivatel] WHERE login = @login"; // Include 'prava'
+                    using (SqlCommand command = new SqlCommand(sql, connection))
                     {
-                        var storedHashedPassword = reader["heslo"].ToString();
-                        var user = new User
-                        {
-                            Uzivatele_ID = (int)reader["Uzivatel_ID"],
-                            jmeno = reader["jmeno"] != DBNull.Value ? reader["jmeno"].ToString() : "", // Handle potential null values
-                            prijmeni = reader["prijmeni"] != DBNull.Value ? reader["prijmeni"].ToString() : "", // Handle potential null values
-                            email = reader["email"] != DBNull.Value ? reader["email"].ToString() : "", // Handle potential null values
-                            login = reader["login"].ToString(),
-                            prava = (Role)(int)reader["prava"] // Retrieve and cast 'prava'
-                        };
+                        command.Parameters.AddWithValue("@login", login);
 
-                        // Verify the password using the LoginManager
-                        var passwordHasher = new PasswordHasher<object>();
-                        var result = passwordHasher.VerifyHashedPassword(null, storedHashedPassword, heslo);
-                        if (result == PasswordVerificationResult.Success)
+                        using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            return user;
+                            if (reader.Read())
+                            {
+                                var storedHashedPassword = reader["heslo"].ToString();
+                                var user = new User
+                                {
+                                    Uzivatele_ID = (int)reader["Uzivatel_ID"],
+                                    jmeno = reader["jmeno"] != DBNull.Value ? reader["jmeno"].ToString() : "", // Handle potential null values
+                                    prijmeni = reader["prijmeni"] != DBNull.Value ? reader["prijmeni"].ToString() : "", // Handle potential null values
+                                    email = reader["email"] != DBNull.Value ? reader["email"].ToString() : "", // Handle potential null values
+                                    login = reader["login"].ToString(),
+                                    prava = (Role)(int)reader["prava"] // Retrieve and cast 'prava'
+                                };
+
+                                // Verify the password using the LoginManager
+                                var passwordHasher = new PasswordHasher<object>();
+                                var result = passwordHasher.VerifyHashedPassword(null, storedHashedPassword, heslo);
+                                if (result == PasswordVerificationResult.Success)
+                                {
+                                    return user;
+                                }
+                            }
+                            return null;
                         }
                     }
+                }
+                catch (Exception ex)
+                {
+                    ErrorMessage = "Chyba při připojení k databázi.";
+                    Console.WriteLine($"Chyba DB: {ex.Message}");
                     return null;
                 }
             }
-        }
-        catch (Exception ex)
-        {
-            ErrorMessage = "Chyba při připojení k databázi.";
-            Console.WriteLine($"Chyba DB: {ex.Message}");
-            return null;
-        }
-    }
-}
+        }       
     }
 }

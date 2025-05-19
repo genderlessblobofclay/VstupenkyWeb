@@ -42,16 +42,16 @@
     </div>
 
     @if (User.IsInRole("Admin"))
-{
-    <div class="form-group">
-        <label for="prava">Role:</label>
-        <select class="form-control" asp-for="NovyUzivatel.prava">
-            <option value="@((int)VstupenkyWeb.Models.Role.Zakaznik)">Zákazník</option>
-            <option value="@((int)VstupenkyWeb.Models.Role.Admin)">Admin</option>
-        </select>
-        <span asp-validation-for="NovyUzivatel.prava" class="text-danger"></span>
-    </div>
-}s
+    {
+        <div class="form-group">
+            <label for="prava">Role:</label>
+                <select class="form-control" asp-for="NovyUzivatel.prava">
+                <option value="@((int)VstupenkyWeb.Models.Role.Zakaznik)">Zákazník</option>
+                <option value="@((int)VstupenkyWeb.Models.Role.Admin)">Admin</option>
+            </select>
+            <span asp-validation-for="NovyUzivatel.prava" class="text-danger"></span>
+        </div>
+    }
     <button type="submit" class="btn btn-primary">Registrovat</button>
     <a asp-page="./Prihlaseni" class="btn btn-secondary">Zpět na přihlášení</a>
 </form>

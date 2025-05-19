@@ -20,7 +20,6 @@ namespace VstupenkyWeb.Models
         private readonly string _connectionString;
         private readonly IHttpContextAccessor _httpContextAccessor;
 
-        // Inicializace v konstruktoru
         public VstupenkyManager(IConfiguration configuration, IHttpContextAccessor httpContextAccessor)
         {
             _connectionString = configuration.GetConnectionString("VstupenkyDB") ?? "";
@@ -76,7 +75,6 @@ namespace VstupenkyWeb.Models
                     // Get the current user's ID
                     var userId = GetCurrentUserId();
 
-                    // Získání nového ID (stále zjednodušené)
                     string selectMaxIdSql = $"SELECT ISNULL(MAX(vstupenka_id), 0) + 1 FROM {TabulkaVstupenky}";
                     using (SqlCommand selectMaxIdCommand = new SqlCommand(selectMaxIdSql, connection))
                     {
