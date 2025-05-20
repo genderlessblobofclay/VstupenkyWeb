@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Identity;
 using SendGrid;
 using SendGrid.Helpers.Mail;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
 
 namespace VstupenkyWeb.Models
 {
@@ -17,12 +18,14 @@ namespace VstupenkyWeb.Models
         private readonly string _connectionString;
         private readonly IPasswordHasher<IdentityUser> _passwordHasher;
         private readonly IConfiguration _configuration;
+        private readonly ILogger<LoginManager> _logger;
 
-        public LoginManager(IConfiguration configuration, IPasswordHasher<IdentityUser> passwordHasher)
+        public LoginManager(IConfiguration configuration, IPasswordHasher<IdentityUser> passwordHasher, ILogger<LoginManager> logger)
         {
             _connectionString = configuration.GetConnectionString("VstupenkyDB") ?? "";
             _passwordHasher = passwordHasher;
             _configuration = configuration;
+            _logger = logger;
         }
 
         private async Task SendEmail(string to, string subject, string body)
@@ -302,7 +305,73 @@ namespace VstupenkyWeb.Models
                 return null;
             }
         }
+
+
+      public User AuthenticateUser(string login, string password)
+        {
+            User user = GetUserByLogin(login);
+            if (user != null)
+            {
+                var result = _passwordHasher.VerifyHashedPassword(new IdentityUser(), user.heslo, password);
+
+                if (result == PasswordVerificationResult.Success)
+                {
+                    return user;
+                }
+                else
+                {
+                    _logger.LogError("Incorrect password attempt for user: {Login}", login);
+                    return null;
+                }
+            }
+            else
+            {
+                _logger.LogError("User not found: {Login}", login);
+                return null;
+            }
+        }
         
+        private User GetUserByLogin(string login)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(_connectionString))
+                {
+                    connection.Open();
+                    string sql = "SELECT Uzivatel_ID, jmeno, prijmeni, email, login, heslo, prava FROM [devextlunch].[Uzivatel] WHERE login = @Login";
+                    using (SqlCommand command = new SqlCommand(sql, connection))
+                    {
+                        command.Parameters.AddWithValue("@Login", login);
+
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                return new User
+                                {
+                                    Uzivatele_ID = (int)reader["Uzivatel_ID"],
+                                    jmeno = reader["jmeno"].ToString(),
+                                    prijmeni = reader["prijmeni"].ToString(),
+                                    email = reader["email"].ToString(),
+                                    login = reader["login"].ToString(),
+                                    heslo = reader["heslo"].ToString(), // Retrieve the hashed password
+                                    prava = (Role)(int)reader["prava"]
+                                };
+                            }
+                            else
+                            {
+                                return null;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error getting user by login: {ex}");
+                return null;
+            }
+        }
         
     }
 

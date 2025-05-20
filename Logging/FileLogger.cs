@@ -15,8 +15,8 @@ namespace VstupenkyWeb.Logging
         {
             _categoryName = categoryName;
             _options = options;
-            _filePath = filePath ?? throw new ArgumentNullException(nameof(filePath)); // Ensure filePath is not null
-            _maxFileSize = maxFileSize;
+            _filePath = options.Path ?? throw new ArgumentNullException(nameof(options.Path)); // Ensure filePath is not null
+            _maxFileSize = options.MaxFileSize;
         }
 
         public IDisposable BeginScope<TState>(TState state)

@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging.Configuration;
 using Microsoft.Extensions.Logging.EventLog;
 using VstupenkyWeb.Extensions; // Add this line
 using VstupenkyWeb.Logging;
+using VstupenkyWeb.Models; // Add this line
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,11 +15,12 @@ builder.Services.AddRazorPages();
 Console.WriteLine($"Connection string: {builder.Configuration.GetConnectionString("VstupenkyDB")}");
 Console.WriteLine($"SendGrid API Key: {builder.Configuration["SendGrid:ApiKey"]}");
 builder.Services.AddTransient<VstupenkyWeb.Models.VstupenkyManager>();
-builder.Services.AddTransient<VstupenkyWeb.Models.LoginManager>(provider =>
+builder.Services.AddTransient<LoginManager>(provider =>
 {
     var configuration = provider.GetRequiredService<IConfiguration>();
     var passwordHasher = provider.GetRequiredService<IPasswordHasher<IdentityUser>>();
-    return new VstupenkyWeb.Models.LoginManager(configuration, passwordHasher);
+    var logger = provider.GetRequiredService<ILogger<LoginManager>>();
+    return new LoginManager(configuration, passwordHasher, logger);
 });
 builder.Services.AddScoped<IPasswordHasher<IdentityUser>, PasswordHasher<IdentityUser>>();
 
@@ -45,6 +46,8 @@ if (OperatingSystem.IsWindows())
 // Add file logger
 builder.Services.Configure<FileLoggerOptions>(builder.Configuration.GetSection("Logging:File"));
 builder.Logging.AddFile(builder.Configuration.GetSection("Logging:File"));
+builder.Services.Configure<ErrorFileLoggerOptions>(builder.Configuration.GetSection("Logging:ErrorFile"));
+builder.Logging.AddErrorFile(builder.Configuration.GetSection("Logging:ErrorFile"));
 
 var app = builder.Build();
 
@@ -64,6 +67,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.UseActionLogging();
+app.UseGlobalExceptionHandling();
 
 app.MapRazorPages();
 //app.UseHttpsRedirection();

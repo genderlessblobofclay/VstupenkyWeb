@@ -9,5 +9,10 @@ namespace VstupenkyWeb.Extensions
         {
             return builder.UseMiddleware<ActionLoggingMiddleware>();
         }
+
+        public static IApplicationBuilder UseGlobalExceptionHandling(this IApplicationBuilder builder)
+        {
+            return builder.UseMiddleware<GlobalExceptionHandlingMiddleware>();
+        }
     }
 }

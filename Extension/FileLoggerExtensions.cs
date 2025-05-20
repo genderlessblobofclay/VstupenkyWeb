@@ -17,5 +17,15 @@ namespace VstupenkyWeb.Extensions
 
             return builder;
         }
+        public static ILoggingBuilder AddErrorFile(
+            this ILoggingBuilder builder,
+            IConfigurationSection configuration)
+        {
+            builder.AddConfiguration(configuration);
+
+            builder.Services.AddSingleton<ILoggerProvider, FileErrorLoggerProvider>();
+
+            return builder;
+        }
     }
 }

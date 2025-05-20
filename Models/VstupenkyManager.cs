@@ -147,7 +147,7 @@ namespace VstupenkyWeb.Models
             }
         }
 
-        private int GetCurrentUserId()
+        public int GetCurrentUserId()
         {
             var userIdClaim = _httpContextAccessor.HttpContext?.User?.FindFirst(ClaimTypes.NameIdentifier);
             if (userIdClaim != null && int.TryParse(userIdClaim.Value, out int userId))
@@ -156,7 +156,7 @@ namespace VstupenkyWeb.Models
             }
 
             // Handle the case where the user is not authenticated or the ID claim is not found
-            return -1;
+            return 0;
         }
 
         private bool IsAuthorizedToDelete(int ticketId, int userId)
@@ -215,6 +215,29 @@ namespace VstupenkyWeb.Models
             catch (Exception ex)
             {
                 Console.WriteLine($"Error deleting tickets for user ID {userId}: {ex.Message}");
+            }
+        }
+
+
+        public int GetTotalTicketsForUser(int userId)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(_connectionString))
+                {
+                    connection.Open();
+                    string sql = $"SELECT ISNULL(SUM(pocet), 0) FROM {TabulkaVstupenky} WHERE Uzivatel_ID = @userId";
+                    using (SqlCommand command = new SqlCommand(sql, connection))
+                    {
+                        command.Parameters.AddWithValue("@userId", userId);
+                        return (int)command.ExecuteScalar();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error getting total tickets for user: {ex}");
+                return 0;
             }
         }
     }
