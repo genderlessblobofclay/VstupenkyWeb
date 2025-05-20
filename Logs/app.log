@@ -8638,3 +8638,201 @@ DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
 20.05.2025 12:21:27 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
 20.05.2025 12:21:27 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.4v8eqarkd7.js - 200 5857 text/javascript 29.5365ms
 20.05.2025 12:23:22 [Information] Microsoft.Hosting.Lifetime - Application is shutting down...
+20.05.2025 12:42:56 [Information] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\brigadnik1\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+20.05.2025 12:42:56 [Information] Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5024
+20.05.2025 12:42:56 [Information] Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+20.05.2025 12:42:56 [Information] Microsoft.Hosting.Lifetime - Hosting environment: Development
+20.05.2025 12:42:56 [Information] Microsoft.Hosting.Lifetime - Content root path: C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb
+20.05.2025 12:44:17 [Information] Microsoft.Hosting.Lifetime - Application is shutting down...
+20.05.2025 12:44:22 [Information] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\brigadnik1\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+20.05.2025 12:44:22 [Information] Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5024
+20.05.2025 12:44:22 [Information] Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+20.05.2025 12:44:22 [Information] Microsoft.Hosting.Lifetime - Hosting environment: Development
+20.05.2025 12:44:22 [Information] Microsoft.Hosting.Lifetime - Content root path: C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/AdminPanel - - -
+20.05.2025 12:44:27 [Warning] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - Failed to determine the https port for redirect.
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Authorization.DefaultAuthorizationService - Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Cookies was challenged.
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/AdminPanel - 302 0 - 74.8544ms
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/Index?ReturnUrl=%2FAdminPanel - - -
+20.05.2025 12:44:27 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User Anonymous (Anonymous) performed action GET /Index at 05/20/2025 12:44:27
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/Index'
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Route matched with {page = "/Index", action = "", controller = ""}. Executing page /Index
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing handler method VstupenkyWeb.Pages.IndexModel.OnGet - ModelState is Valid
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed handler method OnGet, returned result .
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing an implicit handler method - ModelState is Valid
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed page /Index in 148.265ms
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/Index'
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/Index?ReturnUrl=%2FAdminPanel - 200 - text/html;+charset=utf-8 204.1213ms
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/css/bootstrap.min.css - - -
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/css/site.css?v=nNnSJlaBtOjw2lGuBMUC0YjRR9GOrpHrdJyzvFJ-dls - - -
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/VstupenkyWeb.styles.css?v=qtB24qLRMN4vRGdLM_ryFeGORfD_ZOUqcXkU1TQzVA4 - - -
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - -
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/VstupenkyWeb.styles.css'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Debug\net9.0\scopedcss\bundle\VstupenkyWeb.styles.css'
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - - -
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\wwwroot\css\site.css'
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/VstupenkyWeb.styles.css?v=qtB24qLRMN4vRGdLM_ryFeGORfD_ZOUqcXkU1TQzVA4 - 200 1130 text/css 7.1719ms
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80721 text/javascript 5.8979ms
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 231 text/javascript 10.0852ms
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/lib/jquery-validation/dist/jquery.validate.min.js - - -
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js - - -
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.min.js'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js'
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/jquery-validation/dist/jquery.validate.min.js - 200 25308 text/javascript 18.9681ms
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\wwwroot\lib\jquery\dist\jquery.min.js'
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/jquery/dist/jquery.min.js - 200 87533 text/javascript 37.6486ms
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js'
+20.05.2025 12:44:27 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js - 200 5824 text/javascript 7.6448ms
+20.05.2025 12:44:29 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/LoginInfo/ZapomenuteHeslo - - -
+20.05.2025 12:44:29 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User Anonymous (Anonymous) performed action GET /LoginInfo/ZapomenuteHeslo at 05/20/2025 12:44:29
+20.05.2025 12:44:29 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/LoginInfo/ZapomenuteHeslo'
+20.05.2025 12:44:29 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Route matched with {page = "/LoginInfo/ZapomenuteHeslo", action = "", controller = ""}. Executing page /LoginInfo/ZapomenuteHeslo
+20.05.2025 12:44:29 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing an implicit handler method - ModelState is Valid
+20.05.2025 12:44:29 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+20.05.2025 12:44:29 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed page /LoginInfo/ZapomenuteHeslo in 16.7508ms
+20.05.2025 12:44:29 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/LoginInfo/ZapomenuteHeslo'
+20.05.2025 12:44:29 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/LoginInfo/ZapomenuteHeslo - 200 - text/html;+charset=utf-8 39.3185ms
+20.05.2025 12:44:33 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5024/LoginInfo/ZapomenuteHeslo - application/x-www-form-urlencoded 212
+20.05.2025 12:44:33 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User Anonymous (Anonymous) performed action POST /LoginInfo/ZapomenuteHeslo at 05/20/2025 12:44:33
+20.05.2025 12:44:33 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/LoginInfo/ZapomenuteHeslo'
+20.05.2025 12:44:33 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Route matched with {page = "/LoginInfo/ZapomenuteHeslo", action = "", controller = ""}. Executing page /LoginInfo/ZapomenuteHeslo
+20.05.2025 12:44:33 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing handler method VstupenkyWeb.Pages.LoginInfo.ZapomenuteHesloModel.OnPost - ModelState is Valid
+20.05.2025 12:44:34 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+20.05.2025 12:44:34 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed page /LoginInfo/ZapomenuteHeslo in 1589.2601ms
+20.05.2025 12:44:34 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/LoginInfo/ZapomenuteHeslo'
+20.05.2025 12:44:34 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5024/LoginInfo/ZapomenuteHeslo - 200 - text/html;+charset=utf-8 1596.3952ms
+20.05.2025 12:45:32 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/AdminPanel - - -
+20.05.2025 12:45:32 [Information] Microsoft.AspNetCore.Authorization.DefaultAuthorizationService - Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+20.05.2025 12:45:32 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Cookies was challenged.
+20.05.2025 12:45:32 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/AdminPanel - 302 0 - 6.1745ms
+20.05.2025 12:45:32 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/Index?ReturnUrl=%2FAdminPanel - - -
+20.05.2025 12:45:32 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User Anonymous (Anonymous) performed action GET /Index at 05/20/2025 12:45:32
+20.05.2025 12:45:32 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/Index'
+20.05.2025 12:45:32 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Route matched with {page = "/Index", action = "", controller = ""}. Executing page /Index
+20.05.2025 12:45:32 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing handler method VstupenkyWeb.Pages.IndexModel.OnGet - ModelState is Valid
+20.05.2025 12:45:32 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed handler method OnGet, returned result .
+20.05.2025 12:45:32 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing an implicit handler method - ModelState is Valid
+20.05.2025 12:45:32 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+20.05.2025 12:45:32 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed page /Index in 6.6027ms
+20.05.2025 12:45:32 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/Index'
+20.05.2025 12:45:32 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/Index?ReturnUrl=%2FAdminPanel - 200 - text/html;+charset=utf-8 12.0981ms
+20.05.2025 12:45:34 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/ - - -
+20.05.2025 12:45:34 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User Anonymous (Anonymous) performed action GET / at 05/20/2025 12:45:34
+20.05.2025 12:45:34 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/Index'
+20.05.2025 12:45:34 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Route matched with {page = "/Index", action = "", controller = ""}. Executing page /Index
+20.05.2025 12:45:34 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing handler method VstupenkyWeb.Pages.IndexModel.OnGet - ModelState is Valid
+20.05.2025 12:45:34 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed handler method OnGet, returned result .
+20.05.2025 12:45:34 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing an implicit handler method - ModelState is Valid
+20.05.2025 12:45:34 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+20.05.2025 12:45:34 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed page /Index in 3.5992ms
+20.05.2025 12:45:34 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/Index'
+20.05.2025 12:45:34 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/ - 200 - text/html;+charset=utf-8 13.1075ms
+20.05.2025 12:45:40 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5024/ - application/x-www-form-urlencoded 207
+20.05.2025 12:45:40 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User Anonymous (Anonymous) performed action POST / at 05/20/2025 12:45:40
+20.05.2025 12:45:40 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/Index'
+20.05.2025 12:45:40 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Route matched with {page = "/Index", action = "", controller = ""}. Executing page /Index
+20.05.2025 12:45:40 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing handler method VstupenkyWeb.Pages.IndexModel.OnPostAsync - ModelState is Valid
+20.05.2025 12:45:40 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+20.05.2025 12:45:40 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed page /Index in 109.3955ms
+20.05.2025 12:45:40 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/Index'
+20.05.2025 12:45:40 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5024/ - 200 - text/html;+charset=utf-8 112.2675ms
+20.05.2025 12:45:43 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5024/ - application/x-www-form-urlencoded 211
+20.05.2025 12:45:43 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User Anonymous (Anonymous) performed action POST / at 05/20/2025 12:45:43
+20.05.2025 12:45:43 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/Index'
+20.05.2025 12:45:43 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Route matched with {page = "/Index", action = "", controller = ""}. Executing page /Index
+20.05.2025 12:45:43 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing handler method VstupenkyWeb.Pages.IndexModel.OnPostAsync - ModelState is Valid
+20.05.2025 12:45:43 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Cookies signed in.
+20.05.2025 12:45:43 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult.
+20.05.2025 12:45:43 [Information] Microsoft.AspNetCore.Mvc.RedirectToRouteResult - Executing RedirectToPageResult, redirecting to /Vstupenky/Rezervace.
+20.05.2025 12:45:43 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed page /Index in 92.2148ms
+20.05.2025 12:45:43 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/Index'
+20.05.2025 12:45:43 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5024/ - 302 0 - 95.6641ms
+20.05.2025 12:45:43 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/Vstupenky/Rezervace - - -
+20.05.2025 12:45:43 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /Vstupenky/Rezervace at 05/20/2025 12:45:43
+20.05.2025 12:45:43 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/Vstupenky/Rezervace'
+20.05.2025 12:45:43 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Route matched with {page = "/Vstupenky/Rezervace", action = "", controller = ""}. Executing page /Vstupenky/Rezervace
+20.05.2025 12:45:43 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing handler method VstupenkyWeb.Pages.IndexModel.OnGet - ModelState is Valid
+20.05.2025 12:45:43 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed handler method OnGet, returned result .
+20.05.2025 12:45:43 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing an implicit handler method - ModelState is Valid
+20.05.2025 12:45:43 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+20.05.2025 12:45:43 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed page /Vstupenky/Rezervace in 5.894ms
+20.05.2025 12:45:43 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/Vstupenky/Rezervace'
+20.05.2025 12:45:43 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/Vstupenky/Rezervace - 200 - text/html;+charset=utf-8 11.3127ms
+20.05.2025 12:45:45 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/AdminPanel - - -
+20.05.2025 12:45:45 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /AdminPanel at 05/20/2025 12:45:45
+20.05.2025 12:45:45 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/AdminPanel'
+20.05.2025 12:45:45 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Route matched with {page = "/AdminPanel", action = "", controller = ""}. Executing page /AdminPanel
+20.05.2025 12:45:45 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing handler method VstupenkyWeb.Pages.AdminPanelModel.OnGet - ModelState is Valid
+20.05.2025 12:45:45 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed handler method OnGet, returned result .
+20.05.2025 12:45:45 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing an implicit handler method - ModelState is Valid
+20.05.2025 12:45:45 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+20.05.2025 12:45:45 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed page /AdminPanel in 31.2032ms
+20.05.2025 12:45:45 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/AdminPanel'
+20.05.2025 12:45:45 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/AdminPanel - 200 - text/html;+charset=utf-8 40.9273ms
+20.05.2025 12:45:46 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/Vstupenky/TabulkaVstupenky - - -
+20.05.2025 12:45:46 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /Vstupenky/TabulkaVstupenky at 05/20/2025 12:45:46
+20.05.2025 12:45:46 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/Vstupenky/TabulkaVstupenky'
+20.05.2025 12:45:46 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Route matched with {page = "/Vstupenky/TabulkaVstupenky", action = "", controller = ""}. Executing page /Vstupenky/TabulkaVstupenky
+20.05.2025 12:45:46 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing handler method VstupenkyWeb.Pages.Vstupenky.TabulkaVstupenkyModel.OnGet - ModelState is Valid
+20.05.2025 12:45:46 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed handler method OnGet, returned result .
+20.05.2025 12:45:46 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing an implicit handler method - ModelState is Valid
+20.05.2025 12:45:46 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+20.05.2025 12:45:46 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed page /Vstupenky/TabulkaVstupenky in 38.7968ms
+20.05.2025 12:45:46 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/Vstupenky/TabulkaVstupenky'
+20.05.2025 12:45:46 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/Vstupenky/TabulkaVstupenky - 200 - text/html;+charset=utf-8 47.7183ms
+20.05.2025 12:45:47 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/api/Export/ExportCsv - - -
+20.05.2025 12:45:47 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /api/Export/ExportCsv at 05/20/2025 12:45:47
+20.05.2025 12:45:47 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'VstupenkyWeb.Controllers.ExportController.ExportCsv (VstupenkyWeb)'
+20.05.2025 12:45:47 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker - Route matched with {action = "ExportCsv", controller = "Export", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ExportCsv() on controller VstupenkyWeb.Controllers.ExportController (VstupenkyWeb).
+20.05.2025 12:45:47 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.FileContentResultExecutor - Executing FileContentResult, sending file with download name 'Vstupenky.csv' ...
+20.05.2025 12:45:47 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker - Executed action VstupenkyWeb.Controllers.ExportController.ExportCsv (VstupenkyWeb) in 31.7072ms
+20.05.2025 12:45:47 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'VstupenkyWeb.Controllers.ExportController.ExportCsv (VstupenkyWeb)'
+20.05.2025 12:45:47 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/api/Export/ExportCsv - 200 665 text/csv 40.2910ms
+20.05.2025 12:46:42 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/AdminPanel - - -
+20.05.2025 12:46:42 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /AdminPanel at 05/20/2025 12:46:42
+20.05.2025 12:46:42 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/AdminPanel'
+20.05.2025 12:46:42 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Route matched with {page = "/AdminPanel", action = "", controller = ""}. Executing page /AdminPanel
+20.05.2025 12:46:42 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing handler method VstupenkyWeb.Pages.AdminPanelModel.OnGet - ModelState is Valid
+20.05.2025 12:46:42 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed handler method OnGet, returned result .
+20.05.2025 12:46:42 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing an implicit handler method - ModelState is Valid
+20.05.2025 12:46:42 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+20.05.2025 12:46:42 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed page /AdminPanel in 24.0654ms
+20.05.2025 12:46:42 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/AdminPanel'
+20.05.2025 12:46:42 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/AdminPanel - 200 - text/html;+charset=utf-8 35.7298ms
+20.05.2025 12:46:43 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/Vstupenky/TabulkaVstupenky - - -
+20.05.2025 12:46:43 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /Vstupenky/TabulkaVstupenky at 05/20/2025 12:46:43
+20.05.2025 12:46:43 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/Vstupenky/TabulkaVstupenky'
+20.05.2025 12:46:43 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Route matched with {page = "/Vstupenky/TabulkaVstupenky", action = "", controller = ""}. Executing page /Vstupenky/TabulkaVstupenky
+20.05.2025 12:46:43 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing handler method VstupenkyWeb.Pages.Vstupenky.TabulkaVstupenkyModel.OnGet - ModelState is Valid
+20.05.2025 12:46:43 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed handler method OnGet, returned result .
+20.05.2025 12:46:43 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing an implicit handler method - ModelState is Valid
+20.05.2025 12:46:43 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+20.05.2025 12:46:43 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed page /Vstupenky/TabulkaVstupenky in 40.2115ms
+20.05.2025 12:46:43 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/Vstupenky/TabulkaVstupenky'
+20.05.2025 12:46:43 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/Vstupenky/TabulkaVstupenky - 200 - text/html;+charset=utf-8 45.0119ms
+20.05.2025 12:46:45 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5024/Vstupenky/Pridat - - -
+20.05.2025 12:46:45 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action GET /Vstupenky/Pridat at 05/20/2025 12:46:45
+20.05.2025 12:46:45 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/Vstupenky/Pridat'
+20.05.2025 12:46:45 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Route matched with {page = "/Vstupenky/Pridat", action = "", controller = ""}. Executing page /Vstupenky/Pridat
+20.05.2025 12:46:45 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing an implicit handler method - ModelState is Valid
+20.05.2025 12:46:45 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+20.05.2025 12:46:45 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed page /Vstupenky/Pridat in 20.4321ms
+20.05.2025 12:46:45 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/Vstupenky/Pridat'
+20.05.2025 12:46:45 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5024/Vstupenky/Pridat - 200 - text/html;+charset=utf-8 29.2598ms
+20.05.2025 12:46:50 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5024/Vstupenky/Pridat - application/x-www-form-urlencoded 282
+20.05.2025 12:46:50 [Information] VstupenkyWeb.Middleware.ActionLoggingMiddleware - User 34 (Lenor) performed action POST /Vstupenky/Pridat at 05/20/2025 12:46:50
+20.05.2025 12:46:50 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/Vstupenky/Pridat'
+20.05.2025 12:46:50 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Route matched with {page = "/Vstupenky/Pridat", action = "", controller = ""}. Executing page /Vstupenky/Pridat
+20.05.2025 12:46:50 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executing handler method VstupenkyWeb.Pages.Vstupenky.PridatModel.OnPost - ModelState is Valid
+20.05.2025 12:46:50 [Error] VstupenkyWeb.Pages.Vstupenky.PridatModel - User 34 tried to reserve 10000 tickets, but the limit is 20.
+20.05.2025 12:46:50 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+20.05.2025 12:46:50 [Information] Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker - Executed page /Vstupenky/Pridat in 24.6786ms
+20.05.2025 12:46:50 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/Vstupenky/Pridat'
+20.05.2025 12:46:50 [Information] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 POST http://localhost:5024/Vstupenky/Pridat - 200 - text/html;+charset=utf-8 28.8879ms
+20.05.2025 12:47:39 [Information] Microsoft.Hosting.Lifetime - Application is shutting down...
