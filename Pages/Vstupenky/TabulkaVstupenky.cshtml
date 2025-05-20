@@ -9,10 +9,13 @@
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
     <h1>Seznam Vstupenek</h1>
-    @if (User.IsInRole("Admin"))
-    {
-        <button type="button" class="btn btn-success btn-sm" onclick="location.href='/api/Export/ExportCsv'">Exportovat jako CSV</button>
-    }
+    <div>
+        <a asp-page="./Pridat" class="btn btn-primary">Rezervovat vstupenky</a>
+        @if (User.IsInRole("Admin"))
+        {
+            <button type="button" class="btn btn-success btn-sm" onclick="location.href='/api/Export/ExportCsv'">Exportovat do CSV</button>
+        }
+    </div>
 </div>
 
 <table class="table">
@@ -35,7 +38,10 @@
                 <td>@vstupenka.Id</td>
                 <td>@vstupenka.Jmeno</td>
                 <td>@vstupenka.Pocet</td>
-                <td>@vstupenka.DatumRezervace</td>
+                 @if (User.IsInRole("Admin") || vstupenka.Uzivatel_ID == userId)
+                    {
+                        <td>@vstupenka.DatumRezervace</td>
+                    }   
                 <td>
                     @if (User.IsInRole("Admin") || vstupenka.Uzivatel_ID == userId)
                     {
@@ -49,5 +55,3 @@
         }
     </tbody>
 </table>
-
-<a asp-page="./Pridat" class="btn btn-primary">Rezervovat vstupenky</a>

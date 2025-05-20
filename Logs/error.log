@@ -4,3 +4,4 @@
 20.05.2025 7:17:53 [Error] VstupenkyWeb.Pages.Vstupenky.PridatModel - User 34 tried to reserve 321 tickets, but the limit is 20.
 20.05.2025 8:10:16 [Error] VstupenkyWeb.Pages.Vstupenky.PridatModel - User 40 tried to reserve 25 tickets, but the limit is 20.
 20.05.2025 8:10:24 [Error] VstupenkyWeb.Pages.Vstupenky.PridatModel - User 40 tried to reserve 10 tickets, but the limit is 20.
+20.05.2025 11:22:14 [Error] VstupenkyWeb.Pages.Vstupenky.PridatModel - User 40 tried to reserve 745 tickets, but the limit is 20.

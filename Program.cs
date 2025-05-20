@@ -61,7 +61,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseStaticFiles();
+app.UseStaticFiles(); // Place this before UseRouting
 app.UseRouting();
 
 app.UseAuthentication();
@@ -70,12 +70,13 @@ app.UseAuthorization();
 app.UseActionLogging();
 app.UseGlobalExceptionHandling();
 
-app.MapRazorPages();
 app.MapControllers();
+app.MapRazorPages();
+
 //app.UseHttpsRedirection();
 
-app.MapStaticAssets();
-app.MapRazorPages()
-    .WithStaticAssets();
+//app.MapStaticAssets(); // Remove this line
+//app.MapRazorPages() // Remove this line
+//    .WithStaticAssets(); // Remove this line
 
 app.Run();
