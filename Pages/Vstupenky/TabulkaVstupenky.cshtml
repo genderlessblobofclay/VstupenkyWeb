@@ -7,7 +7,13 @@
     var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
 }
 
-<h1>Seznam Vstupenek</h1>
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <h1>Seznam Vstupenek</h1>
+    @if (User.IsInRole("Admin"))
+    {
+        <button type="button" class="btn btn-success btn-sm" onclick="location.href='/api/Export/ExportCsv'">Exportovat jako CSV</button>
+    }
+</div>
 
 <table class="table">
     <thead>
@@ -44,10 +50,4 @@
     </tbody>
 </table>
 
-<div style="display: flex; justify-content: space-between;">
-    <a asp-page="./Pridat" class="btn btn-primary">Rezervovat vstupenky</a>
-    @if (User.IsInRole("Admin"))
-    {
-        <button type="button" class="btn btn-success btn-sm" onclick="location.href='/api/Export/ExportCsv'" style="margin-left: auto;">Export CSV</button>
-    }
-</div>
+<a asp-page="./Pridat" class="btn btn-primary">Rezervovat vstupenky</a>
