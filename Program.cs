@@ -10,6 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddControllers();
 
 // **CORRECT LOCATION FOR SERVICE REGISTRATION**
 Console.WriteLine($"Connection string: {builder.Configuration.GetConnectionString("VstupenkyDB")}");
@@ -70,6 +71,7 @@ app.UseActionLogging();
 app.UseGlobalExceptionHandling();
 
 app.MapRazorPages();
+app.MapControllers();
 //app.UseHttpsRedirection();
 
 app.MapStaticAssets();

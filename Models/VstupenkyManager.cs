@@ -13,9 +13,12 @@ namespace VstupenkyWeb.Models
         public string Jmeno { get; set; } = "";
         public int Pocet { get; set; }
         public int Uzivatel_ID { get; set; }
+        public DateTime DatumRezervace { get; set; } 
+        public string Email { get; set; }
+        
     }
 
-    public class VstupenkyManager
+   public class VstupenkyManager
     {
         private readonly string _connectionString;
         private readonly IHttpContextAccessor _httpContextAccessor;
@@ -36,7 +39,18 @@ namespace VstupenkyWeb.Models
                 using (SqlConnection connection = new SqlConnection(_connectionString))
                 {
                     connection.Open();
-                    string sql = $"SELECT vstupenka_id, jmeno, pocet, Uzivatel_ID FROM {TabulkaVstupenky}";
+                    string sql = @"
+                        SELECT 
+                            v.vstupenka_id, 
+                            v.jmeno, 
+                            v.pocet, 
+                            v.Uzivatel_ID, 
+                            v.DatumRezervace,
+                            u.email
+                        FROM 
+                            [devextlunch].[Table_1] v
+                        INNER JOIN
+                            [devextlunch].[Uzivatel] u ON v.Uzivatel_ID = u.Uzivatel_ID";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         using (SqlDataReader reader = command.ExecuteReader())
@@ -48,7 +62,9 @@ namespace VstupenkyWeb.Models
                                     Id = (int)reader["vstupenka_id"],
                                     Jmeno = reader["jmeno"] == DBNull.Value ? "" : reader["jmeno"].ToString(),
                                     Pocet = (int)reader["pocet"],
-                                    Uzivatel_ID = reader.IsDBNull(reader.GetOrdinal("Uzivatel_ID")) ? 0 : (int)reader["Uzivatel_ID"]
+                                    Uzivatel_ID = reader.IsDBNull(reader.GetOrdinal("Uzivatel_ID")) ? 0 : (int)reader["Uzivatel_ID"],
+                                    DatumRezervace = reader.IsDBNull(reader.GetOrdinal("DatumRezervace")) ? DateTime.MinValue : (DateTime)reader["DatumRezervace"],
+                                    Email = reader["email"] == DBNull.Value ? "" : reader["email"].ToString()
                                 };
                                 Console.WriteLine($"Ticket ID: {vstupenka.Id}, Name: {vstupenka.Jmeno}, Count: {vstupenka.Pocet}, User ID: {vstupenka.Uzivatel_ID}"); // Add this line
                                 vstupenky.Add(vstupenka);
@@ -80,13 +96,14 @@ namespace VstupenkyWeb.Models
                     {
                         int noveId = (int)selectMaxIdCommand.ExecuteScalar();
 
-                        string sql = $"INSERT INTO {TabulkaVstupenky} (vstupenka_id, jmeno, pocet, Uzivatel_ID) VALUES (@id, @jmeno, @pocet, @userId)";
+                        string sql = $"INSERT INTO {TabulkaVstupenky} (vstupenka_id, jmeno, pocet, Uzivatel_ID, DatumRezervace) VALUES (@id, @jmeno, @pocet, @userId, @datumRezervace)";
                         using (SqlCommand command = new SqlCommand(sql, connection))
                         {
                             command.Parameters.AddWithValue("@id", noveId);
                             command.Parameters.AddWithValue("@jmeno", jmeno);
                             command.Parameters.AddWithValue("@pocet", pocet);
                             command.Parameters.AddWithValue("@userId", userId); // Store the user's ID
+                            command.Parameters.AddWithValue("@datumRezervace", DateTime.Now); // Add the current date and time
 
                             int rowsAffected = command.ExecuteNonQuery();
                             if (rowsAffected > 0)
@@ -240,5 +257,6 @@ namespace VstupenkyWeb.Models
                 return 0;
             }
         }
+    
     }
 }

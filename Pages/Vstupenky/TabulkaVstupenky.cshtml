@@ -15,6 +15,7 @@
             <th>ID</th>
             <th>Jméno</th>
             <th>Počet</th>
+            <th>Datum Rezervace</th>
             @if (User.IsInRole("Admin") || User.IsInRole("Zakaznik"))
             {
                 <th>Akce</th>
@@ -28,10 +29,11 @@
                 <td>@vstupenka.Id</td>
                 <td>@vstupenka.Jmeno</td>
                 <td>@vstupenka.Pocet</td>
+                <td>@vstupenka.DatumRezervace</td>
                 <td>
                     @if (User.IsInRole("Admin") || vstupenka.Uzivatel_ID == userId)
                     {
-                        <form method="post">
+                        <form method="post" style="display: inline-block;">
                             <input type="hidden" asp-for="@vstupenka.Id" name="id" />
                             <button type="submit" class="btn btn-danger btn-sm">Odstranit</button>
                         </form>
@@ -42,6 +44,10 @@
     </tbody>
 </table>
 
-<p>
-     <a asp-page="./Pridat" class="btn btn-primary">Rezervovat vstupenky</a>
-</p>
+<div style="display: flex; justify-content: space-between;">
+    <a asp-page="./Pridat" class="btn btn-primary">Rezervovat vstupenky</a>
+    @if (User.IsInRole("Admin"))
+    {
+        <button type="button" class="btn btn-success btn-sm" onclick="location.href='/api/Export/ExportCsv'" style="margin-left: auto;">Export CSV</button>
+    }
+</div>
