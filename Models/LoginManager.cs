@@ -131,7 +131,7 @@ namespace VstupenkyWeb.Models
         public async Task SendPasswordResetEmail(string email, string resetToken)
         {
             // Create the password reset link
-            string resetLink = $"https://yourwebsite.com/LoginInfo/ResetPassword?email={email}&token={resetToken}";
+            string resetLink = $"https://praxe.mkmvision.cz//LoginInfo/ResetPassword?email={email}&token={resetToken}";
 
             // Create the email message
             string subject = "Žádost o resetování hesla";
