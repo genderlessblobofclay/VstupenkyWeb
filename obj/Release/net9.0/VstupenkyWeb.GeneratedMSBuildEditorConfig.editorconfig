@@ -20,6 +20,14 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/brigadnik1/Desktop/Praxe/ConsoleApp1/ConsoleApp1/VstupenkyWeb/Pages/AdminPanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5QYW5lbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/brigadnik1/Desktop/Praxe/ConsoleApp1/ConsoleApp1/VstupenkyWeb/Pages/EditProfilu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFByb2ZpbHUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/brigadnik1/Desktop/Praxe/ConsoleApp1/ConsoleApp1/VstupenkyWeb/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -28,8 +36,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/brigadnik1/Desktop/Praxe/ConsoleApp1/ConsoleApp1/VstupenkyWeb/Pages/LoginInfo/ObnovaHesla.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5JbmZvXE9ibm92YUhlc2xhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/brigadnik1/Desktop/Praxe/ConsoleApp1/ConsoleApp1/VstupenkyWeb/Pages/LoginInfo/Registrace.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5JbmZvXFJlZ2lzdHJhY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/brigadnik1/Desktop/Praxe/ConsoleApp1/ConsoleApp1/VstupenkyWeb/Pages/LoginInfo/ZapomenuteHeslo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5JbmZvXFphcG9tZW51dGVIZXNsby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/brigadnik1/Desktop/Praxe/ConsoleApp1/ConsoleApp1/VstupenkyWeb/Pages/Odhlaseni.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT2RobGFzZW5pLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/brigadnik1/Desktop/Praxe/ConsoleApp1/ConsoleApp1/VstupenkyWeb/Pages/Odhlasit.cshtml]
@@ -42,6 +62,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/brigadnik1/Desktop/Praxe/ConsoleApp1/ConsoleApp1/VstupenkyWeb/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/brigadnik1/Desktop/Praxe/ConsoleApp1/ConsoleApp1/VstupenkyWeb/Pages/UdajeZmena/HesloZmena.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVWRhamVabWVuYVxIZXNsb1ptZW5hLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/brigadnik1/Desktop/Praxe/ConsoleApp1/ConsoleApp1/VstupenkyWeb/Pages/UdajeZmena/MailZmena.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVWRhamVabWVuYVxNYWlsWm1lbmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/brigadnik1/Desktop/Praxe/ConsoleApp1/ConsoleApp1/VstupenkyWeb/Pages/Vstupenky/Pridat.cshtml]

@@ -73,7 +73,6 @@ C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Relea
 C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Release\net9.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Release\net9.0\scopedcss\bundle\VstupenkyWeb.styles.css
 C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Release\net9.0\scopedcss\projectbundle\VstupenkyWeb.bundle.scp.css
-C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Release\net9.0\compressed\7insjaiag6-b9sayid5wm.gz
 C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Release\net9.0\compressed\gd2rxl9zas-61n19gt1b8.gz
 C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Release\net9.0\compressed\vuzvxzc0yr-xtxxf3hu2r.gz
 C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Release\net9.0\compressed\cqz6ryo7ed-bqjiyaj88i.gz
@@ -152,3 +151,13 @@ C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Relea
 C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Release\net9.0\VstupenkyWeb.pdb
 C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Release\net9.0\VstupenkyWeb.genruntimeconfig.cache
 C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Release\net9.0\ref\VstupenkyWeb.dll
+C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\bin\Release\net9.0\publish\web.config
+C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\bin\Release\net9.0\publish\appsettings.Development.json
+C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\bin\Release\net9.0\publish\appsettings.json
+C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\bin\Release\net9.0\publish\VstupenkyWeb.deps.json
+C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\bin\Release\net9.0\publish\VstupenkyWeb.runtimeconfig.json
+C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\bin\Release\net9.0\publish\VstupenkyWeb.staticwebassets.endpoints.json
+C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\bin\Release\net9.0\Newtonsoft.Json.dll
+C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\bin\Release\net9.0\SendGrid.dll
+C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\bin\Release\net9.0\StarkbankEcdsa.dll
+C:\Users\brigadnik1\Desktop\Praxe\ConsoleApp1\ConsoleApp1\VstupenkyWeb\obj\Release\net9.0\compressed\7insjaiag6-4sjpe6lgcy.gz
