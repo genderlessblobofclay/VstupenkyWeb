@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VstupenkyWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+046196e31453876ea1e4401d540bab7271d2d6f3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41a5b1f4d9b58a2085da5f03efb2b559497824e7")]
 [assembly: System.Reflection.AssemblyProductAttribute("VstupenkyWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VstupenkyWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
