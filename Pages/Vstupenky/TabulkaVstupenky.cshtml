@@ -13,7 +13,7 @@
         <a asp-page="./Pridat" class="btn btn-primary">Rezervovat vstupenky</a>
         @if (User.IsInRole("Admin"))
         {
-            <button type="button" class="btn btn-success btn-sm" onclick="location.href='/api/Export/ExportCsv'">Exportovat do CSV</button>
+            <button type="button" class="btn btn-success btn-sm" onclick="location.href='/vstupenky/api/Export/ExportCsv'">Exportovat do CSV</button>
         }
     </div>
 </div>
